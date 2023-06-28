@@ -84,3 +84,26 @@
 }
 ```
 <br>方向是VLP（Vision Language Pretraining），在视觉和语言上进行预训练。但是目前已有的方法都缺少图像的位置信息，导致在某些任务上的表现不好，比如视觉推理。这个文章主要是让模型学习到视觉位置信息，具体方法是先把图片划分成N*N的方块，然后用常见的目标检测模型检测出每个方块中的目标，然后训练模型回答一个填空问题，例如，The block [P] has a object [O]，给P问O或者给O问P。在一些数据集上和VLP模型相比，提点明显，和Object Detection模型相比，准确率类似，但速度更快。
+
+
+## 6.28
+### DepGraph: Towards Any Structural Pruning
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Fang_DepGraph_Towards_Any_Structural_Pruning_CVPR_2023_paper.pdf
+- code: https://github.com/VainF/Torch-Pruning
+- citation:
+```bash
+@inproceedings{fang2023depgraph,
+  title={Depgraph: Towards any structural pruning},
+  author={Fang, Gongfan and Ma, Xinyin and Song, Mingli and Mi, Michael Bi and Wang, Xinchao},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={16091--16101},
+  year={2023}
+}
+```
+方向是网络剪枝。可以在保持网络准确性的同时提升网络的速度。方法是依赖图，通过明确网络各节点之间的依赖关系，当用户指定某个要剪枝的网络层的时候，可以识别出需要同时剪枝的关联剪枝组，从而能够在保持网络结构完整性和准确性的同时实现剪枝。代码应该19年就开始写了，今年发了cvpr，已经封装成了python包，在github上也开源了，目前1.3k star。
+
+### Diffusion Probabilistic Model Made Slim
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_Diffusion_Probabilistic_Model_Made_Slim_CVPR_2023_paper.pdf
+是对LDM（Latent Diffusion Model）的性能优化。LDM生成图片的效果好，但是计算量大。作者先试着训练了一个小参数量的LDM，但是生成的图片效果很差。通过分析发现LDM有忽略高频信息的偏好，所以在LDM里面加入了wavelet gating（小波门控）这个信号处理领域的算法，帮助了LDM捕捉高频信息。最终实验显示，在保持相同保真度的同时，实现了8-18倍的性能提升。
