@@ -107,3 +107,15 @@
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_Diffusion_Probabilistic_Model_Made_Slim_CVPR_2023_paper.pdf
 <br>是对LDM（Latent Diffusion Model）的性能优化。LDM生成图片的效果好，但是计算量大。作者先试着训练了一个小参数量的LDM，但是生成的图片效果很差。通过分析发现LDM有忽略高频信息的偏好，所以在LDM里面加入了wavelet gating（小波门控）这个信号处理领域的算法，帮助了LDM捕捉高频信息。最终实验显示，在保持相同保真度的同时，实现了8-18倍的性能提升。
+
+## 6.29
+### Partial Network Cloning
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Ye_Partial_Network_Cloning_CVPR_2023_paper.pdf
+- code: https://github.com/JngwenYe/PNCloning
+方向是网络克隆。目前已有的方法是知识蒸馏，通过教师模型训练学生模型。网络克隆是直接把一个网络的模块插入到另一个网络中。这个文章提出了一个方法来查确定插入模块和被插入位置，能够获取最好的准确性。实验显示网络克隆相比于知识蒸馏，能够提升准确性和局部性。
+
+### Slimmable Dataset Condensation
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_Slimmable_Dataset_Condensation_CVPR_2023_paper.pdf
+<br>方向是数据集压缩。现有的数据集压缩方法在一定存储空间或者带宽下使用，当预设条件改变时，必须重新使用原数据集进行压缩，但有时候已经无法获取到原数据集了。通过对这个问题的分析发现了两个关键的因素：不同压缩时间训练出的网络的不一致性、无法确定压缩数据集的解空间。这个文章提出了针对这两个问题的解决方法，从而能够在压缩后的数据集上做进一步的压缩。实验结果显示在多个数据集上取得了较好的结果。
