@@ -119,3 +119,10 @@
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_Slimmable_Dataset_Condensation_CVPR_2023_paper.pdf
 <br>方向是数据集压缩。现有的数据集压缩方法在一定存储空间或者带宽下使用，当预设条件改变时，必须重新使用原数据集进行压缩，但有时候已经无法获取到原数据集了。通过对这个问题的分析发现了两个关键的因素：不同压缩时间训练出的网络的不一致性、无法确定压缩数据集的解空间。这个文章提出了针对这两个问题的解决方法，从而能够在压缩后的数据集上做进一步的压缩。实验结果显示在多个数据集上取得了较好的结果。
+
+## 7.4
+### Task Residual for Tuning Vision-Language Models
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yu_Task_Residual_for_Tuning_Vision-Language_Models_CVPR_2023_paper.pdf
+- code: https://github.com/geekyutao/TaskRes
+方向是vision language model（VLM）预训练模型的迁移学习。现有的方法要么会抛弃预训练学习到的知识，要么会过度依赖预训练学习到的知识。这篇文章在训练时会冻结预训练模型的参数，同时新增一个分类器，用来学习下游任务的知识，从而解决了现有方法的问题。实验显示在多个数据集上超过了之前方法的结果。
