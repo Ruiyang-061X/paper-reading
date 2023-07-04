@@ -125,4 +125,34 @@
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yu_Task_Residual_for_Tuning_Vision-Language_Models_CVPR_2023_paper.pdf
 - code: https://github.com/geekyutao/TaskRes
-<br>方向是vision language model（VLM）预训练模型的迁移学习。现有的方法要么会抛弃预训练学习到的知识，要么会过度依赖预训练学习到的知识。这篇文章在训练时会冻结预训练模型的参数，同时新增一个分类器，用来学习下游任务的知识，从而解决了现有方法的问题。实验显示在多个数据集上超过了之前方法的结果。
+- citation:
+```bash
+@inproceedings{yu2023task,
+  title={Task Residual for Tuning Vision-Language Models},
+  author={Yu, Tao and Lu, Zhihe and Jin, Xin and Chen, Zhibo and Wang, Xinchao},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={10899--10909},
+  year={2023}
+}
+```
+方向是vision language model（VLM）预训练模型的迁移学习。现有的方法要么会抛弃预训练学习到的知识，要么会过度依赖预训练学习到的知识。这篇文章在训练时会冻结预训练模型的参数，同时新增一个分类器，用来学习下游任务的知识，从而解决了现有方法的问题。实验显示在多个数据集上超过了之前方法的结果。
+
+### Deep Graph Reprogramming
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Jing_Deep_Graph_Reprogramming_CVPR_2023_paper.pdf
+<br>方向是图的重编码，意思是重组一个gnn，不添加训练特征也不添加模型参数，使得这个gnn能用于不同的下游任务。方法是数据重编码和模型重编码，数据重编码是重组训练特征，使得这些特征能够代表不同任务的训练数据，模型重编码是重组模型，使得模型能够处理不同的下游任务。实验在14个数据集上进行了验证，发现这种方法的结果和每个任务分别训练模型的结果相似。
+
+### Distribution Shift Inversion for Out-of-Distribution Prediction
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yu_Distribution_Shift_Inversion_for_Out-of-Distribution_Prediction_CVPR_2023_paper.pdf
+- code: https://github.com/yu-rp/Distribution-Shift-Iverson
+- citation:
+```bash
+@article{yu2023distribution,
+    author    = {Runpeng Yu, Songhua Liu, Xingyi Yang, Xinchao Wang},
+    title     = {Distribution Shift Inversion for Out-of-Distribution Prediction},
+    journal   = {The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR)},
+    year      = {2023},
+}
+```
+方向是Out of Distribution(OoD) prediction。有时候训练数据和测试数据的分布是不一样的，导致在训练数据上训练的模型在测试数据上的效果不好。这篇文章的方法是在测试阶段会用一个在训练数据上训练的扩散模型，测试数据会先和高斯噪声线性组合，然后通过这个扩散模型，这个扩散模型会把测试数据的分布转化成训练数据的分布，这时候再通过预测模型时的效果就会好很多。实验显示，当这个方法被运用在现有的OoD方法上时，会有普遍的准确率提升。
