@@ -156,3 +156,25 @@
 }
 ```
 方向是Out of Distribution(OoD) prediction。有时候训练数据和测试数据的分布是不一样的，导致在训练数据上训练的模型在测试数据上的效果不好。这篇文章的方法是在测试阶段会用一个在训练数据上训练的扩散模型，测试数据会先和高斯噪声线性组合，然后通过这个扩散模型，这个扩散模型会把测试数据的分布转化成训练数据的分布，这时候再通过预测模型时的效果就会好很多。实验显示，当这个方法被运用在现有的OoD方法上时，会有普遍的准确率提升。
+
+## 7.5
+### Master: Meta Style Transformer for Controllable Zero-Shot and Few-Shot Artistic Style Transfer
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Tang_Master_Meta_Style_Transformer_for_Controllable_Zero-Shot_and_Few-Shot_Artistic_CVPR_2023_paper.pdf
+<br>方向是图片风格迁移。使用Transformer做风格迁移，存在参数量大、内容失真的问题。这篇文章对vanilla Transformer进行了改进，不同的网络层共享同一组参数，使得参数量变少。同时对内容特征做了学习化的扩展，从而可以更好的保证内容的相似性。同时还加上了meta learning，使得模型能够应用于few shot learning和zero shot learning。同时还支持了text guided风格迁移。实验显示在few shot learning和zero shot learning场景下的结果更好。
+
+### EqMotion: Equivariant Multi-agent Motion Predictionwith Invariant Interaction Reasoning
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Xu_EqMotion_Equivariant_Multi-Agent_Motion_Prediction_With_Invariant_Interaction_Reasoning_CVPR_2023_paper.pdf
+- code: https://github.com/MediaBrain-SJTU/EqMotion
+- citation:
+```bash
+@inproceedings{xu2023eqmotion,
+  title={EqMotion: Equivariant Multi-agent Motion Prediction with Invariant Interaction Reasoning},
+  author={Xu, Chenxin and Tan, Robby T and Tan, Yuhong and Chen, Siheng and Wang, Yu Guang and Wang, Xinchao and Wang, Yanfeng},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={1410--1420},
+  year={2023}
+}
+```
+方向是动作预测。这个方向的一个基本原则是要保持在欧式空间下的动作的等变性和对象交互的不变性。但目前很多方法都忽略了这一点。这个文章会使用一个等变性空间特征学习模块学习保证动作的等变性。同时使用一个不变性交互推理模块保证对象交互的不变性。还是使用了不变性模式特征学习模块增强动作的表征。实验显示在粒子运动、分子运动、人类骨架运动、行人轨迹预测上取得了SOTA结果，而且提点明显。
