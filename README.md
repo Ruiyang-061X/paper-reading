@@ -175,6 +175,56 @@
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={1410--1420},
   year={2023}
-}
 ```
 方向是动作预测。这个方向的一个基本原则是要保持在欧式空间下的动作的等变性和对象交互的不变性。但目前很多方法都忽略了这一点。这个文章会使用一个等变性空间特征学习模块学习保证动作的等变性。同时使用一个不变性交互推理模块保证对象交互的不变性。还是使用了不变性模式特征学习模块增强动作的表征。实验显示在粒子运动、分子运动、人类骨架运动、行人轨迹预测上取得了SOTA结果，而且提点明显。
+
+## 7.6
+### Overcoming the Trade-off Between Accuracy and Plausibility in 3D Hand Shape Reconstruction
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yu_Overcoming_the_Trade-Off_Between_Accuracy_and_Plausibility_in_3D_Hand_CVPR_2023_paper.pdf
+<br>方向是手的3D重建。非参数化的方法能获得很高的准确率，但是结果通常没有合理性。参数化的方法能获得合理性，但是通常准确率不高。这篇文章提出了一种弱监督的方法，把非参数化的网格拟合和参数化模型MANO结合了起来，而且可以进行端到端的训练。从而获得了准确率和合理性的平衡，在有挑战性的双手和手物体交互场景中取得了很好的结果。
+
+### DBARF: Deep Bundle-Adjusting Generalizable Neural Radiance Fields
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Chen_DBARF_Deep_Bundle-Adjusting_Generalizable_Neural_Radiance_Fields_CVPR_2023_paper.pdf
+- code: https://github.com/AIBluefisher/dbarf
+- website: https://aibluefisher.github.io/dbarf/
+- citation:
+```bash
+@InProceedings{Chen_2023_CVPR,
+    author    = {Chen, Yu and Lee, Gim Hee},
+    title     = {DBARF: Deep Bundle-Adjusting Generalizable Neural Radiance Fields},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {24-34}
+}
+```
+方向是3D场景表示。目前的方法在NeRF（Neural Radiance Fields）上取得了很好的结果，这些方法是基于坐标MLP的。但无法在GeNeRF（Generalizable Neural Radiance Fields）上使用，因为GeNeRF需要使用3D CNN或者transformer进行特征提取。这篇文章先分析了GeNeRF上的难点，然后进行了解决。使用了损失特征图计算了一个显示损失函数，同时用自监督的方式进行训练，从而可以在GeNeRF上使用。实验显示在GeNeRF取得了很好的结果。
+
+### NeRF-DS: Neural Radiance Fields for Dynamic Specular Objects
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yan_NeRF-DS_Neural_Radiance_Fields_for_Dynamic_Specular_Objects_CVPR_2023_paper.pdf
+- code: https://github.com/JokerYan/NeRF-DS
+- citation:
+```bash
+@InProceedings{Chen_2023_CVPR,
+    author    = {Chen, Yu and Lee, Gim Hee},
+    title     = {DBARF: Deep Bundle-Adjusting Generalizable Neural Radiance Fields},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {24-34}
+}
+```
+
+### ScarceNet: Animal Pose Estimation with Scarce Annotations
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Li_ScarceNet_Animal_Pose_Estimation_With_Scarce_Annotations_CVPR_2023_paper.pdf
+- code: https://github.com/chaneyddtt/ScarceNet
+<br>
+
+### ContraNeRF: Generalizable Neural Radiance Fields for Synthetic-to-real Novel View Synthesis via Contrastive Learning
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_ContraNeRF_Generalizable_Neural_Radiance_Fields_for_Synthetic-to-Real_Novel_View_Synthesis_CVPR_2023_paper.pdf
+<br>
