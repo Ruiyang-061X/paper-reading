@@ -202,6 +202,7 @@
 ```
 方向是3D场景表示。目前的方法在NeRF（Neural Radiance Fields）上取得了很好的结果，这些方法是基于坐标MLP的。但无法在GeNeRF（Generalizable Neural Radiance Fields）上使用，因为GeNeRF需要使用3D CNN或者transformer进行特征提取。这篇文章先分析了GeNeRF上的难点，然后进行了解决。使用了损失特征图计算了一个显示损失函数，同时用自监督的方式进行训练，从而可以在GeNeRF上使用。实验显示在GeNeRF取得了很好的结果。
 
+## 7.7
 ### NeRF-DS: Neural Radiance Fields for Dynamic Specular Objects
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yan_NeRF-DS_Neural_Radiance_Fields_for_Dynamic_Specular_Objects_CVPR_2023_paper.pdf
@@ -229,4 +230,9 @@ Dynamic NeRF算法无法使用于反光运动物体。这篇文章将Dynamic NeR
 ### ContraNeRF: Generalizable Neural Radiance Fields for Synthetic-to-real Novel View Synthesis via Contrastive Learning
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_ContraNeRF_Generalizable_Neural_Radiance_Fields_for_Synthetic-to-Real_Novel_View_Synthesis_CVPR_2023_paper.pdf
-<br>
+<br>方向是3D重建。GeNeRF目前的模型在synthetic-to-real（合成数据上训练，真实数据上推理）场景上存在体积密度经常不准确的问题。这篇文章使用了几何意识对比学习来学习多视角下的特征，同时使用了多视角注意力来增强几何特征的感知。实验显示，在synthetic-to-real场景下，和现有方法相比可以生成质量更好的结果。同时在real-to-real场景下，也取得了SOTA的结果。
+
+### Analyzing and Diagnosing Pose Estimation with Attributions
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/He_Analyzing_and_Diagnosing_Pose_Estimation_With_Attributions_CVPR_2023_paper.pdf
+<br>方向是姿态识别。提出了Pose Integrated Gradient。能够根据挑选的关节生成相对应的热力图。同时提出了3个量化指标，并用这些指标对现有的模型进行了比较。发现了手部姿态识别中识别指关节的一条捷径，还有人体姿态识别中的一个反转错误。
