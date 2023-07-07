@@ -217,12 +217,14 @@
     pages     = {24-34}
 }
 ```
+Dynamic NeRF算法无法使用于反光运动物体。这篇文章将Dynamic NeRF的公式做了调整，是它适用于表面的位置和旋转。同时加入了运动物体的mask，从而可以保持时序关联。在自建数据集上验证发现比现有模型的效果都要好。
 
 ### ScarceNet: Animal Pose Estimation with Scarce Annotations
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Li_ScarceNet_Animal_Pose_Estimation_With_Scarce_Annotations_CVPR_2023_paper.pdf
 - code: https://github.com/chaneyddtt/ScarceNet
 <br>
+方向是动物姿态识别。动物姿态识别目前主要的困难在于数据量比较少。这篇文章首先在小数据集上训练一个模型，然后用这个模型给大量图片打标。使用small-loss trick挑选出一小部分好的标签。使用同意检查在剩下的那些图片中挑选出可以重复使用的图片，然后再进行打标。最后还会用学生-老师模型进行一致性限制，剔除掉挑选出的图片中的少量质量差的数据。从而得到了一个大数据集。实验显示在这个数据集上训练得到的模型，在AP-10K上，比半监督模型准确率高很多，在TigDog上，比领域迁移模型的准确率高。
 
 ### ContraNeRF: Generalizable Neural Radiance Fields for Synthetic-to-real Novel View Synthesis via Contrastive Learning
 - from: cvpr2023
