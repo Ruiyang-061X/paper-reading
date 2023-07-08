@@ -236,3 +236,35 @@ Dynamic NeRF算法无法使用于反光运动物体。这篇文章将Dynamic NeR
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/He_Analyzing_and_Diagnosing_Pose_Estimation_With_Attributions_CVPR_2023_paper.pdf
 <br>方向是姿态识别。提出了Pose Integrated Gradient。能够根据挑选的关节生成相对应的热力图。同时提出了3个量化指标，并用这些指标对现有的模型进行了比较。发现了手部姿态识别中识别指关节的一条捷径，还有人体姿态识别中的一个反转错误。
+
+## 7.8
+### Cross-Domain 3D Hand Pose Estimation with Dual Modalities
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Lin_Cross-Domain_3D_Hand_Pose_Estimation_With_Dual_Modalities_CVPR_2023_paper.pdf
+<br>方向是手部姿态估计。目前的方法有使用合成的数据去训练模型，但是因为存在领域区别，无法适用于真实数据。这篇文章提出了一个跨域半监督模型，在有标签的合成数据和无标签的真实数据上训练。模型是双模态的，在RGB数据和Depth数据上进行训练。与训练阶段使用了多模态对比学习和注意力融合监督。在精调阶段使用了一种新的自扩散技术，来减少伪标签噪声。实验显示在3D手部姿态估计和2D关键点检测上提点明显。
+
+### DSFNet: Dual Space Fusion Network for Occlusion-Robust 3D Dense Face Alignment
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Li_DSFNet_Dual_Space_Fusion_Network_for_Occlusion-Robust_3D_Dense_Face_CVPR_2023_paper.pdf
+- code: https://github.com/lhyfst/DSFNet
+<br>方向是脸部对齐。目前的3D密集脸部对齐方法在严重遮挡和大角度视角时难以使用。目前的3D方法直接回归模型中的参数，导致对于2D空间和语义信息使用的较少，但这些信息对于脸部形状和朝向是有用的。这篇文章解决了遮挡和大角度视角问题。先使用可见的脸部特征做回归。然后使用关于脸部模型的先验知识去补全不可见的脸部。最终模型是个融合网络，同时使用图片信息和脸部模型信息做脸部对齐。实验显示在AFLW2000-3D数据集上，取得了3.80% NME，比SOTA提升了5.5%。
+
+### Seeing What You Said: Talking Face Generation Guided by a Lip Reading Expert
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_Seeing_What_You_Said_Talking_Face_Generation_Guided_by_a_CVPR_2023_paper.pdf
+<br>方向是说话脸部生成。输入是连续语音，输出是脸部视频尤其是唇部相关的运动。目前的方法都没有考虑到唇部运动的实际发音。这篇文章使用一个读唇专家阅读唇部运动的内容，惩罚错误的内容。因为数据稀少，使用的是音频-视觉自监督的方式训练读唇专家。基于训练好的读唇专家，使用对比学习来强化唇部和语音的同步，还是用了transformer同步编码语音和视频。验证使用的是两个不同的读唇专家。实验显示超过了之前的SOTA模型。
+
+### 2PCNet: Two-Phase Consistency Training for Day-to-Night Unsupervised Domain Adaptive Object Detection
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Kennerley_2PCNet_Two-Phase_Consistency_Training_for_Day-to-Night_Unsupervised_Domain_Adaptive_Object_CVPR_2023_paper.pdf
+- code: https://github.com/mecarill/2pcnet
+- citation:
+```
+@inproceedings{kennerley2023tpcnet,
+  title={2PCNet: Two-Phase Consistency Training for Day-to-Night Unsupervised Domain Adaptive Object Detection},
+  author={Mikhail Kennerley, Jian-Gang Wang, Bharadwaj Veeravalli, Robby T. Tan},
+  booktitle={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2023},
+}
+```
+方向是夜间目标检测。目前主要的问题是数据少。目前的方法准确率都不高。小的物体和暗的物体很难检测出来。这篇文章提出了一个一致性两阶段无监督领域适应模型。第一阶段中的教师模型的高分预测结果，会被用于第二阶段学生模型的预测提议，然后重新使用教师模型进行评估。在输入学生模型之前，夜间图片和标签都会做scale-down，从而增强对于小的物体的检测。为了增强对于暗的物体的识别，提出了NightAug这个数据增强方式，通过对白天数据做一些处理，使得它们像夜晚数据。实验显示超过了之前的SOTA模型。
