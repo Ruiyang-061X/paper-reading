@@ -268,3 +268,132 @@ Dynamic NeRF算法无法使用于反光运动物体。这篇文章将Dynamic NeR
 }
 ```
 方向是夜间目标检测。目前主要的问题是数据少。目前的方法准确率都不高。小的物体和暗的物体很难检测出来。这篇文章提出了一个一致性两阶段无监督领域适应模型。第一阶段中的教师模型的高分预测结果，会被用于第二阶段学生模型的预测提议，然后重新使用教师模型进行评估。在输入学生模型之前，夜间图片和标签都会做scale-down，从而增强对于小的物体的检测。为了增强对于暗的物体的识别，提出了NightAug这个数据增强方式，通过对白天数据做一些处理，使得它们像夜晚数据。实验显示超过了之前的SOTA模型。
+
+## 7.10
+### Panoptic Video Scene Graph Generation
+- from: cvpr2023
+- papar: https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_Panoptic_Video_Scene_Graph_Generation_CVPR_2023_paper.pdf
+- code: https://github.com/Jingkang50/OpenPVSG
+<br>
+
+### The Nuts and Bolts of Adopting Transformer in GANs
+- from: cvpr2023
+- paper: https://arxiv.org/pdf/2110.13107.pdf
+<br>
+
+### Generating Aligned Pseudo-Supervision from Non-Aligned Data for Image Restoration in Under-Display Camera
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Feng_Generating_Aligned_Pseudo-Supervision_From_Non-Aligned_Data_for_Image_Restoration_in_CVPR_2023_paper.pdf
+- code:  https://github.com/jnjaby/AlignFormer
+- citation：
+```
+@InProceedings{Feng_2023_Generating,
+   author    = {Feng, Ruicheng and Li, Chongyi and Chen, Huaijin and Li, Shuai and Gu, Jinwei and Loy, Chen Change},
+   title     = {Generating Aligned Pseudo-Supervision from Non-Aligned Data for Image Restoration in Under-Display Camera},
+   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+   month     = {June},
+   year      = {2023},
+}
+```
+
+### Flexible Piecewise Curves Estimation for Photo Enhancement
+- from: cvpr2023
+- paper: https://arxiv.org/pdf/2010.13412.pdf
+<br>
+
+### BeautyREC: Robust, Efficient, and Component-Specific Makeup Transfer
+- from: cvpr2023
+- paper: https://arxiv.org/pdf/2212.05855.pdf
+- code: https://github.com/learningyan/BeautyREC
+- citation:
+```
+@inproceedings{BeautyREC,
+          author = {Yan, Qixin and Guo, Chunle and Zhao, Jixin and Dai, Yuekun and Loy, Chen Change and Li, Chongyi},
+          title = {BeautyREC: Robust, Efficient, and Component-Specific Makeup Transfer},
+          booktitle = {Arixv},
+          year = {2022}
+}
+```
+
+### Siamese DETR
+- from: cvpr2023
+- paper: https://arxiv.org/pdf/2303.18144.pdf
+- code: https://github.com/Zx55/SiameseDETR
+- citation:
+```
+@article{chen2023siamese,
+  title={Siamese DETR},
+  author={Chen, Zeren and Huang, Gengshi and Li, Wei and Teng, Jianing and Wang, Kun and Shao, Jing and Loy, Chen Change and Sheng, Lu},
+  journal={arXiv preprint arXiv:2303.18144},
+  year={2023}
+}
+```
+
+### CelebV-Text: A Large-Scale Facial Text-Video Dataset
+- from: cvpe2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yu_CelebV-Text_A_Large-Scale_Facial_Text-Video_Dataset_CVPR_2023_paper.pdf
+- website: https://celebv-text.github.io/
+- code: https://github.com/CelebV-Text/CelebV-Text
+- citation:
+```
+@inproceedings{yu2022celebvtext,
+  title={{CelebV-Text}: A Large-Scale Facial Text-Video Dataset},
+  author={Yu, Jianhui and Zhu, Hao and Jiang, Liming and Loy, Chen Change and Cai, Weidong and Wu, Wayne},
+  booktitle={CVPR},
+  year={2023}
+}
+```
+
+### Learning Generative Structure Prior for Blind Text Image Super-resolution
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Learning_Generative_Structure_Prior_for_Blind_Text_Image_Super-Resolution_CVPR_2023_paper.pdf
+- code: https://github.com/csxmli2016/MARCONet
+- citation:
+```
+@InProceedings{li2023marconet,
+author = {Li, Xiaoming and Zuo, Wangmeng and Loy, Chen Change},
+title = {Learning Generative Structure Prior for Blind Text Image Super-resolution},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+year = {2023}
+}
+```
+
+### Nighttime Smartphone Reflective Flare Removal Using Optical Center Symmetry Prior
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Dai_Nighttime_Smartphone_Reflective_Flare_Removal_Using_Optical_Center_Symmetry_Prior_CVPR_2023_paper.pdf
+- website: https://ykdai.github.io/projects/BracketFlare
+- code: https://github.com/ykdai/BracketFlare
+- citation:
+```
+@inproceedings{dai2023nighttime,
+  title={Nighttime Smartphone Reflective Flare Removal using Optical Center Symmetry Prior},
+  author={Dai, Yuekun and Luo, Yihang and Zhou, Shangchen and Li, Chongyi and Loy, Chen Change},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2023}
+ }
+```
+
+### Correlational Image Modeling for Self-Supervised Visual Pre-Training
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Correlational_Image_Modeling_for_Self-Supervised_Visual_Pre-Training_CVPR_2023_paper.pdf
+- code:  https://github.com/weivision/Correlational-Image-Modeling
+<br>
+
+### Aligning Bag of Regions for Open-Vocabulary Object Detection
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Wu_Aligning_Bag_of_Regions_for_Open-Vocabulary_Object_Detection_CVPR_2023_paper.pdf
+- code: https://github.com/wusize/ovdet
+- citation:
+```
+@inproceedings{wu2023baron,
+    title={Aligning Bag of Regions for Open-Vocabulary Object Detection},
+    author={Size Wu and Wenwei Zhang and Sheng Jin and Wentao Liu and Chen Change Loy},
+    year={2023},
+    booktitle={CVPR},
+}
+```
+
+### Self-Supervised Geometry-Aware Encoder for Style-Based 3D GAN Inversion
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Lan_Self-Supervised_Geometry-Aware_Encoder_for_Style-Based_3D_GAN_Inversion_CVPR_2023_paper.pdf
+<br>
