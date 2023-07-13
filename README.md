@@ -274,12 +274,12 @@ Dynamic NeRF算法无法使用于反光运动物体。这篇文章将Dynamic NeR
 - from: cvpr2023
 - papar: https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_Panoptic_Video_Scene_Graph_Generation_CVPR_2023_paper.pdf
 - code: https://github.com/Jingkang50/OpenPVSG
-<br>
+<br>方向是视频场景图网络（Video Scene Graph, VSG）。属于挖坑之作。目前的VSG是用bounding box表示人和物体，然后描述他们之间的交互。但bounding box的粒度比较粗，会丢失一些细节。这篇文章提出了PVSG（Panoptic Video Scene Graph），其实就是把bounding box换成了segmentation mask，这样粒度就比较细了，并且提出了一个这个任务上的数据集。还给出了一些baseline和一些可行的设计方案。
 
 ### The Nuts and Bolts of Adopting Transformer in GANs
 - from: cvpr2023
 - paper: https://arxiv.org/pdf/2110.13107.pdf
-<br>
+<br>方向是GAN。这篇文章把transformer用在了GAN里面。明确了特征局部性在图像合成中的重要性。发现了自注意力层中的残差连接对于GAN的图片生成有害。通过对transformer的结构进行调整使得能够适用于GAN。提出了STrans-G（generator），与GAN取得了相似的结果。提出了STrans-D（discriminator），与GAN的差距有变小。
 
 ### Generating Aligned Pseudo-Supervision from Non-Aligned Data for Image Restoration in Under-Display Camera
 - from: cvpr2023
@@ -295,11 +295,12 @@ Dynamic NeRF算法无法使用于反光运动物体。这篇文章将Dynamic NeR
    year      = {2023},
 }
 ```
+方向是UDC（Under Display Camera）Image Restoration。主要问题还是数据集少。目前主流方法是把高清图片的一些细节粘贴到模糊图片的对应地方进行训练。导致了空间不对齐和领域不对齐。这篇文章提出了Domain Alignment Module(DAM)和Geometric Alignment Module(GAM)来解决这些问题。实验显示能够解决上述问题。
 
 ### Flexible Piecewise Curves Estimation for Photo Enhancement
 - from: cvpr2023
 - paper: https://arxiv.org/pdf/2010.13412.pdf
-<br>
+<br>方向是图片增强。这篇文章提出的方法是FlexiCurve，是使用图片全局曲线来强化图片的。调整曲线能够处理物体之间的映射。设计了多任务模型来处理照明问题。这种方法的训练数据可以不使用成对的数据。模型的性能很好。实验结果显示模型的增强能力和性能都达到了SOTA。
 
 ### BeautyREC: Robust, Efficient, and Component-Specific Makeup Transfer
 - from: cvpr2023
