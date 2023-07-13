@@ -315,6 +315,7 @@ Dynamic NeRF算法无法使用于反光运动物体。这篇文章将Dynamic NeR
           year = {2022}
 }
 ```
+方向是化妆迁移。使用了组件特定相关性，支持指定组件（皮肤、嘴唇、眼睛）的化妆迁移。使用了transformer进行全局化妆迁移。放弃了transformer中的循环结构，使用了内容一致性损失和内容编码器，从而实现了单向化妆迁移。提出了BeautyFace这个数据集。实验显示和SOTA结果相比具有有效性，同时模型的参数量只有1M，比SOTA模型少。
 
 ### Siamese DETR
 - from: cvpr2023
@@ -329,6 +330,7 @@ Dynamic NeRF算法无法使用于反光运动物体。这篇文章将Dynamic NeR
   year={2023}
 }
 ```
+方向是目标检测。在DETR上加入了孪生结构和自监督模块。把多视角检测和多视角分割联合起来训练，取得了较好效果。在COCO和VOC上取得了SOTA结果。
 
 ### CelebV-Text: A Large-Scale Facial Text-Video Dataset
 - from: cvpe2023
@@ -344,6 +346,7 @@ Dynamic NeRF算法无法使用于反光运动物体。这篇文章将Dynamic NeR
   year={2023}
 }
 ```
+提出了一个人脸文字视频数据集。有70000个视频和1400000个文字。文字描述了静态和动态信息。通过统计分析发现比其他数据集好。通过评估显示了数据集的有效和潜力。使用表征方法建立了一个benchmark。
 
 ### Learning Generative Structure Prior for Blind Text Image Super-resolution
 - from: cvpr2023
@@ -358,6 +361,7 @@ booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Patte
 year = {2023}
 }
 ```
+方向是图像超分。使用StyleGAN学习到了大量文字的结构。同时使用codebook存储所有文字的特征，来限制StyleGAN的输出。实验显示取得了SOTA结果。
 
 ### Nighttime Smartphone Reflective Flare Removal Using Optical Center Symmetry Prior
 - from: cvpr2023
