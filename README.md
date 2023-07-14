@@ -377,12 +377,13 @@ year = {2023}
   year = {2023}
  }
 ```
+方向是手机反射光去除。应该是开坑之作。提出了光学中心对称先验，就是光和光的反射一定关于光学中心对称。构建了第一个反射光去除数据集BracketFlare。训练了一个神经网络学习反射光的去除。实验显示了模型的有效性。
 
 ### Correlational Image Modeling for Self-Supervised Visual Pre-Training
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Correlational_Image_Modeling_for_Self-Supervised_Visual_Pre-Training_CVPR_2023_paper.pdf
 - code:  https://github.com/weivision/Correlational-Image-Modeling
-<br>
+<br>方向是自监督视觉预训练。提出了Correlational Image Modeling(CIM)。就是把图片的某一部分截取出来，然后让模型预测原图和截图的相关图。会使用各种方式去截取不同的图。使用了引导学习框架，使用两个编码器，分别编码截图和原图。模型就是一个交叉注意力模块。实验显示结果与SOTA相似或者超过。
 
 ### Aligning Bag of Regions for Open-Vocabulary Object Detection
 - from: cvpr2023
@@ -397,8 +398,10 @@ year = {2023}
     booktitle={CVPR},
 }
 ```
+方向是开放词汇目标检测。VLM（Vision Language Model）可以对齐图像和文本。现有方法是把单物体输入Image Encoder。这篇论文的方法是把多个物体作为一个整体的包围框输入Image Encoder。这样可以包含更多的结构语义信息。实验显示结果超过了Faster-RCNN。
 
 ### Self-Supervised Geometry-Aware Encoder for Style-Based 3D GAN Inversion
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Lan_Self-Supervised_Geometry-Aware_Encoder_for_Style-Based_3D_GAN_Inversion_CVPR_2023_paper.pdf
 <br>
+方向是3D生成。StyleGAN是2D维度的一个统一模型。目前3D维度缺少同一个模型。使用自监督的方式训练模型，只需要使用3D数据。在Generation Network里面加入了一个分支，加入了像素粒度的特征。还提出了一个视角不变的3D编辑的方法。实验显示超过了SOTA。
