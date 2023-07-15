@@ -405,3 +405,110 @@ year = {2023}
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Lan_Self-Supervised_Geometry-Aware_Encoder_for_Style-Based_3D_GAN_Inversion_CVPR_2023_paper.pdf
 <br>
 方向是3D生成。StyleGAN是2D维度的一个统一模型。目前3D维度缺少同一个模型。使用自监督的方式训练模型，只需要使用3D数据。在Generation Network里面加入了一个分支，加入了像素粒度的特征。还提出了一个视角不变的3D编辑的方法。实验显示超过了SOTA。
+
+## 7.15
+### StyleSync: High-Fidelity Generalized and Personalized Lip Sync in Style-based Generator
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Guan_StyleSync_High-Fidelity_Generalized_and_Personalized_Lip_Sync_in_Style-Based_Generator_CVPR_2023_paper.pdf
+- code: https://github.com/guanjz20/StyleSync
+- website: https://hangz-nju-cuhk.github.io/projects/StyleSync
+- citation:
+```
+@inproceedings{guan2023stylesync,
+  title = {StyleSync: High-Fidelity Generalized and Personalized Lip Sync in Style-based Generator},
+  author = {Guan, Jiazhi and Zhang, Zhanwang and Zhou, Hang and HU, Tianshu and Wang, Kaisiyuan and He, Dongliang and Feng, Haocheng and Liu, Jingtuo and Ding, Errui and Liu, Ziwei and Wang, Jingdong},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2023}
+}
+```
+
+### Collaborative Diffusion for Multi-Modal Face Generation and Editing
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_Collaborative_Diffusion_for_Multi-Modal_Face_Generation_and_Editing_CVPR_2023_paper.pdf
+- code: https://github.com/ziqihuangg/Collaborative-Diffusion
+- website: https://ziqihuangg.github.io/projects/collaborative-diffusion.html
+- citation:
+```
+@InProceedings{huang2023collaborative,
+      author = {Huang, Ziqi and Chan, Kelvin C.K. and Jiang, Yuming and Liu, Ziwei},
+      title = {Collaborative Diffusion for Multi-Modal Face Generation and Editing},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+      year = {2023},
+}
+```
+
+### Detecting and Grounding Multi-Modal Media Manipulation
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Shao_Detecting_and_Grounding_Multi-Modal_Media_Manipulation_CVPR_2023_paper.pdf
+- code: https://github.com/rshaojimmy/MultiModal-DeepFake
+- citation:
+```
+@inproceedings{shao2023dgm4,
+    title={Detecting and Grounding Multi-Modal Media Manipulation},
+    author={Shao, Rui and Wu, Tianxing and Liu, Ziwei},
+    booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2023}
+}
+```
+
+### F2-NeRF: Fast Neural Radiance Field Training with Free Camera Trajectories
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_F2-NeRF_Fast_Neural_Radiance_Field_Training_With_Free_Camera_Trajectories_CVPR_2023_paper.pdf
+- code: https://github.com/totoro97/f2-nerf
+- website: totoro97.github.io/projects/f2-nerf
+- citation:
+```
+@article{wang2023f2nerf,
+  title={F2-NeRF: Fast Neural Radiance Field Training with Free Camera Trajectories},
+  author={Wang, Peng and Liu, Yuan and Chen, Zhaoxi and Liu, Lingjie and Liu, Ziwei and Komura, Taku and Theobalt, Christian and Wang, Wenping},
+  journal={CVPR},
+  year={2023}
+}
+```
+
+### Taming Diffusion Models for Audio-Driven Co-Speech Gesture Generation
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Zhu_Taming_Diffusion_Models_for_Audio-Driven_Co-Speech_Gesture_Generation_CVPR_2023_paper.pdf
+- code: https://github.com/Advocate99/DiffGesture
+- citation:
+```
+@InProceedings{Zhu_2023_CVPR,
+    author    = {Zhu, Lingting and Liu, Xian and Liu, Xuanyu and Qian, Rui and Liu, Ziwei and Yu, Lequan},
+    title     = {Taming Diffusion Models for Audio-Driven Co-Speech Gesture Generation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {10544-10553}
+}
+```
+
+### OmniObject3D: Large-Vocabulary 3D Object Dataset for Realistic Perception, Reconstruction and Generation
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Wu_OmniObject3D_Large-Vocabulary_3D_Object_Dataset_for_Realistic_Perception_Reconstruction_and_CVPR_2023_paper.pdf
+- code: https://github.com/omniobject3d/OmniObject3D
+- website: https://omniobject3d.github.io/
+- citation:
+```
+@inproceedings{wu2023omniobject3d,
+    author = {Tong Wu, Jiarui Zhang, Xiao Fu, Yuxin Wang, Jiawei Ren, 
+    Liang Pan, Wayne Wu, Lei Yang, Jiaqi Wang, Chen Qian, Dahua Lin, Ziwei Liu},
+    title = {OmniObject3D: Large-Vocabulary 3D Object Dataset for Realistic Perception, Reconstruction and Generation},
+    journal={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2023}
+}
+```
+
+### LaserMix for Semi-Supervised LiDAR Semantic Segmentation
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Kong_LaserMix_for_Semi-Supervised_LiDAR_Semantic_Segmentation_CVPR_2023_paper.pdf
+- code: https://github.com/ldkong1205/LaserMix
+- website: https://ldkong.com/LaserMix
+- citation:
+```
+@article{kong2022lasermix,
+    title={LaserMix for Semi-Supervised LiDAR Semantic Segmentation},
+    author={Kong, Lingdong and Ren, Jiawei and Pan, Liang and Liu, Ziwei},
+    journal={arXiv preprint arXiv:2207.00026},
+    year={2022}
+}
+```
