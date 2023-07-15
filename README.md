@@ -421,6 +421,7 @@ year = {2023}
   year = {2023}
 }
 ```
+方向是嘴唇合成。使用了脸部的mask来保持脸部的细节。嘴唇的形状使用模块化卷积修改。使用了样式空间和生成器限制，支持根据一个人的语音和视频，把另一个人的视频中的嘴唇换成前面那个人的。实验显示取得了有高保真度的结果。
 
 ### Collaborative Diffusion for Multi-Modal Face Generation and Editing
 - from: cvpr2023
@@ -436,6 +437,7 @@ year = {2023}
       year = {2023},
 }
 ```
+方向是脸部生成和脸部编辑。目前的扩散模型都是单模态的，这个文章提出了多模态的扩散模型。支持根据文本条件和mask条件生成和编辑人脸。使用多个单模态的扩散模型，然后使用一个元网络预测每个模型的影响函数，从而组合成了一个多模态的扩散模型。实验显示在质量和数据上都取得了很好的结果。
 
 ### Detecting and Grounding Multi-Modal Media Manipulation
 - from: cvpr2023
@@ -450,6 +452,7 @@ year = {2023}
     year={2023}
 }
 ```
+方向是造假检测。目前的任务都是单模态的，图片或者文本，然后也只支持二分类。提出了一个新任务，在图片和文本的多模态数据上，进行虚假检测，检测的结果用图片中的包围框和文本中的短语显示出来。提出了这个任务上的一个数据集。提出了HAMMER（HierArchical Multi-modal Manipulation rEasoning tRansformer）这个模型去解决这个问题。使用了两个单模态encoder的对比学习进行浅层推理。使用了交叉注意力进行深层推理。加入了判断和检测头。构建了一个benchmark。提出了丰富的评价指标。实验显示了模型的有效性。提出了多个有价值的观察，以便未来的研究。
 
 ### F2-NeRF: Fast Neural Radiance Field Training with Free Camera Trajectories
 - from: cvpr2023
@@ -465,6 +468,7 @@ year = {2023}
   year={2023}
 }
 ```
+方向是3D重建。提出了一个快速、自由轨迹的grid-based NeRF。提出了一个全新的视角扭曲，从而实现了自由轨迹。实验显示结果的质量很好。
 
 ### Taming Diffusion Models for Audio-Driven Co-Speech Gesture Generation
 - from: cvpr2023
@@ -481,6 +485,7 @@ year = {2023}
     pages     = {10544-10553}
 }
 ```
+方向是手势生成。给定音频，生成音频对应的手势。使用扩散模型处理语音片段。使用改造过的transformer处理长期时序依赖。使用退火噪声采样算法来保证时序一致性。使用了隐式无分类器知道来平衡多样性和质量。实验显示模型取得了SOTA结果。
 
 ### OmniObject3D: Large-Vocabulary 3D Object Dataset for Realistic Perception, Reconstruction and Generation
 - from: cvpr2023
@@ -497,6 +502,7 @@ year = {2023}
     year={2023}
 }
 ```
+方向是3D数据集。提出了一个真实的3D数据集。有6000个物体的数据。每个物体有丰富的标签。使用专业扫描器扫描。建立了4个赛道，3D感知、新视角合成、表面重建、3D物体生成。广泛的研究发现了一些未来研究的观察、挑战和机会。
 
 ### LaserMix for Semi-Supervised LiDAR Semantic Segmentation
 - from: cvpr2023
@@ -512,3 +518,4 @@ year = {2023}
     year={2022}
 }
 ```
+方向是LiDAR语义分割。提出了一个半监督的方法。使用多个LiDAR扫描器的扫描结果，在混合这些数据之前和混合这些数据之后进行训练，让模型预测出一致的结果。模型与LiDAR的表示方式无关。理论分析显示模型的有效性。实验显示可以和全监督的模型取得相似的结果。而且这个方法运用在全监督模型上时，可以提点。
