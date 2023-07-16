@@ -534,11 +534,12 @@ booktitle={CVPR},
 year={2023}
 }
 ```
+方向是视频异常检测。Weakly Supervised Video Anomaly Detection (WSVAD)的训练数据是视频是否异常的标签，但要预测出视频中的异常片段。目前使用的方法主要是Multiple Instance Learning (MIL)，但这个方法会倾向于异常。这篇文章提出了Unbiased MIL (UMIL)。每次训练时，都会用这个检测器把当前视频片段分为两类：最确信的异常片段和正常片段、其他的不确定片段。在这两类视频片段中寻找一致性特征，可以剔除变化的背景造成的偏差。实验显示方法的有效性。
 
 ### Weakly Supervised Class-agnostic Motion Prediction for Autonomous Driving
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Weakly_Supervised_Class-Agnostic_Motion_Prediction_for_Autonomous_Driving_CVPR_2023_paper.pdf
-<br>
+<br>方向是运动检测。3D点云的运动数据的标记很昂贵，但是3D点云的场景解析数据则比较便宜，因为只表示是否运动，不表示运动方向、运动速度、物体种类这些信息。这篇文章使用场景解析数据先训练了一个分割模型，然后使用这个分割模型预测的运动前景训练运动预测模型。还提出了一个Consistency-aware Chamfer Distance loss。实验显示比自监督模型的效果好，和某些全监督模型的效果差不多。
 
 ### TAPS3D: Text-Guided 3D Textured Shape Generation from Pseudo Supervision
 - from: cvpr2023
@@ -554,6 +555,7 @@ year={2023}
   year={2023}
 }
 ```
+方向是3D生成。是根据一个文本描述生成3D的有纹理的物体。训练数据是使用一个文本模板加上2D图片中的关键信息生成的。使用的是低维度的图片监督。实验显示了方法的有效性。
 
 ### Neural Vector Fields: Implicit Representation by Explicit Learning
 - from: cvpr2023
@@ -570,6 +572,7 @@ year={2023}
       primaryClass={cs.CV}
 }
 ```
+方向是3D表面重建。3D的表示方法目前有两种：显式的使用网格去包裹物体、隐式的使用unsigned distance functions (UDFs)去表示3D表面。这篇文章提出了Neural Vector Fields (NVF)，显式的进行学习，同时获得的是隐式的距离函数表征。实验显示超过了之前的SOTA结果。
 
 ### 3D Cinemagraphy from a Single Image
 - from: cvpr2023
