@@ -519,3 +519,156 @@ year = {2023}
 }
 ```
 方向是LiDAR语义分割。提出了一个半监督的方法。使用多个LiDAR扫描器的扫描结果，在混合这些数据之前和混合这些数据之后进行训练，让模型预测出一致的结果。模型与LiDAR的表示方式无关。理论分析显示模型的有效性。实验显示可以和全监督的模型取得相似的结果。而且这个方法运用在全监督模型上时，可以提点。
+
+## 7.16
+### Unbiased Multiple Instance Learning for Weakly Supervised Video Anomaly Detection
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Lv_Unbiased_Multiple_Instance_Learning_for_Weakly_Supervised_Video_Anomaly_Detection_CVPR_2023_paper.pdf
+- code: https://github.com/ktr-hubrt/UMIL
+- citation:
+```
+@inproceedings{Lv2023unbiased,
+title={Unbiased Multiple Instance Learning for Weakly Supervised Video Anomaly Detection},
+author={Hui Lv and Zhongqi Yue and Qianru Sun and Bin Luo and Zhen Cui and Hanwang Zhang},
+booktitle={CVPR},
+year={2023}
+}
+```
+
+### Weakly Supervised Class-agnostic Motion Prediction for Autonomous Driving
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Weakly_Supervised_Class-Agnostic_Motion_Prediction_for_Autonomous_Driving_CVPR_2023_paper.pdf
+<br>
+
+### TAPS3D: Text-Guided 3D Textured Shape Generation from Pseudo Supervision
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Wei_TAPS3D_Text-Guided_3D_Textured_Shape_Generation_From_Pseudo_Supervision_CVPR_2023_paper.pdf
+- code: https://github.com/plusmultiply/TAPS3D
+- citation:
+```
+@inproceedings{wei2023taps3d,
+  title={TAPS3D: Text-Guided 3D Textured Shape Generation from Pseudo Supervision},
+  author={Wei, Jiacheng and Wang, Hao and Feng, Jiashi and Lin, Guosheng and Yap, Kim-Hui},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={16805--16815},
+  year={2023}
+}
+```
+
+### Neural Vector Fields: Implicit Representation by Explicit Learning
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Yang_Neural_Vector_Fields_Implicit_Representation_by_Explicit_Learning_CVPR_2023_paper.pdf
+- code: https://github.com/Wi-sc/NVF
+- citation:
+```
+@misc{yang2023neural,
+      title={Neural Vector Fields: Implicit Representation by Explicit Learning}, 
+      author={Xianghui Yang and Guosheng Lin and Zhenghao Chen and Luping Zhou},
+      year={2023},
+      eprint={2303.04341},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
+### 3D Cinemagraphy from a Single Image
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Li_3D_Cinemagraphy_From_a_Single_Image_CVPR_2023_paper.pdf
+- code: https://github.com/xingyi-li/3d-cinemagraphy
+- website: https://xingyi-li.github.io/3d-cinemagraphy/
+- citation:
+```
+@InProceedings{li2023_3dcinemagraphy,
+    author    = {Li, Xingyi and Cao, Zhiguo and Sun, Huiqiang and Zhang, Jianming and Xian, Ke and Lin, Guosheng},
+    title     = {3D Cinemagraphy From a Single Image},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {4595-4605}
+}
+```
+
+### Face Transformer: Towards High Fidelity and Accurate Face Swapping
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023W/GCV/papers/Cui_Face_Transformer_Towards_High_Fidelity_and_Accurate_Face_Swapping_CVPRW_2023_paper.pdf
+<br>
+
+### 3D Semantic Segmentation in the Wild: Learning Generalized Models for Adverse-Condition Point Clouds
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Xiao_3D_Semantic_Segmentation_in_the_Wild_Learning_Generalized_Models_for_CVPR_2023_paper.pdf
+- code: https://github.com/xiaoaoran/SemanticSTF
+- citation:
+```
+@article{xiao20233d,
+  title={3D Semantic Segmentation in the Wild: Learning Generalized Models for Adverse-Condition Point Clouds},
+  author={Xiao, Aoran and Huang, Jiaxing and Xuan, Weihao and Ren, Ruijie and Liu, Kangcheng and Guan, Dayan and Saddik, Abdulmotaleb El and Lu, Shijian and Xing, Eric},
+  journal={arXiv preprint arXiv:2304.00690},
+  year={2023}
+}
+```
+
+### KD-DLGAN: Data Limited Image Generation via Knowledge Distillation
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Cui_KD-DLGAN_Data_Limited_Image_Generation_via_Knowledge_Distillation_CVPR_2023_paper.pdf
+<br>
+
+### StyleRF: Zero-shot 3D Style Transfer of Neural Radiance Fields
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_StyleRF_Zero-Shot_3D_Style_Transfer_of_Neural_Radiance_Fields_CVPR_2023_paper.pdf
+- code: https://github.com/Kunhao-Liu/StyleRF
+- website: https://kunhao-liu.github.io/StyleRF/
+- citation:
+```
+@inproceedings{liu2023stylerf,
+  title={StyleRF: Zero-shot 3D Style Transfer of Neural Radiance Fields},
+  author={Liu, Kunhao and Zhan, Fangneng and Chen, Yiwen and Zhang, Jiahui and Yu, Yingchen and El Saddik, Abdulmotaleb and Lu, Shijian and Xing, Eric P},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={8338--8348},
+  year={2023}
+}
+```
+
+### FAC: 3D Representation Learning via Foreground Aware Feature Contrast
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_FAC_3D_Representation_Learning_via_Foreground_Aware_Feature_Contrast_CVPR_2023_paper.pdf
+<br>
+
+### Regularized Vector Quantization for Tokenized Image Synthesis
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Regularized_Vector_Quantization_for_Tokenized_Image_Synthesis_CVPR_2023_paper.pdf
+<br>
+
+### Backdoor Attacks Against Deep Image Compression via Adaptive Frequency Trigger
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Tan_Backdoor_Attacks_Against_Deep_Image_Compression_via_Adaptive_Frequency_Trigger_CVPR_2023_paper.pdf
+<br>
+
+### Towards Efficient Use of Multi-Scale Features in Transformer-Based Object Detectors
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Towards_Efficient_Use_of_Multi-Scale_Features_in_Transformer-Based_Object_Detectors_CVPR_2023_paper.pdf
+- code: https://github.com/ldkong1205/LaserMix
+- website: https://ldkong.com/LaserMix
+- citation:
+```
+@article{kong2022lasermix,
+    title={LaserMix for Semi-Supervised LiDAR Semantic Segmentation},
+    author={Kong, Lingdong and Ren, Jiawei and Pan, Liang and Liu, Ziwei},
+    journal={arXiv preprint arXiv:2207.00026},
+    year={2022}
+}
+```
+
+### DA-DETR: Domain Adaptive Detection Transformer with Information Fusion
+- from: cvpr2023
+- paper: https://arxiv.org/pdf/2103.17084.pdf
+<br>
+
+### UniDAformer: Unified Domain Adaptive Panoptic Segmentation Transformer via Hierarchical Mask Calibration
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_UniDAformer_Unified_Domain_Adaptive_Panoptic_Segmentation_Transformer_via_Hierarchical_Mask_CVPR_2023_paper.pdf
+<br>
+
+### ABLE-NeRF: Attention-Based Rendering with Learnable Embeddings for Neural Radiance Field
+- from: cvpr2023
+- paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Kong_LaserMix_for_Semi-Supervised_LiDAR_Semantic_Segmentation_CVPR_2023_paper.pdf
+<br>
