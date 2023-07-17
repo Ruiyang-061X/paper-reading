@@ -591,10 +591,11 @@ year={2023}
 }
 ```
 
+## 7.17
 ### Face Transformer: Towards High Fidelity and Accurate Face Swapping
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023W/GCV/papers/Cui_Face_Transformer_Towards_High_Fidelity_and_Accurate_Face_Swapping_CVPRW_2023_paper.pdf
-<br>
+<br>方向是换脸。换脸指的是把源脸的身份信息和目标脸的属性信息融合起来。GAN用于换脸会丢失一些细节信息。这篇文章使用transformer进行换脸。能保留这些细节信息。同时使用了多尺度变换机制来保留细粒度的脸部信息。实验显示模型取得了较好的结果。
 
 ### 3D Semantic Segmentation in the Wild: Learning Generalized Models for Adverse-Condition Point Clouds
 - from: cvpr2023
@@ -609,11 +610,12 @@ year={2023}
   year={2023}
 }
 ```
+方向是3D语义分割。提出了一个恶劣天气下的3D点云数据集。进行了两步研究：从正常天气到恶劣天气的领域迁移、从正常天气到全天气的领域泛化。提出了领域随机化技术，通过随机化点云的几何形状，学习到了全天气3D语义分割模型。
 
 ### KD-DLGAN: Data Limited Image Generation via Knowledge Distillation
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Cui_KD-DLGAN_Data_Limited_Image_Generation_via_Knowledge_Distillation_CVPR_2023_paper.pdf
-<br>
+<br>方向是图像生成。GAN的训练往往需要大量的训练数据。这篇文章使用VLM对GAN进行知识蒸馏。训练Discriminator完成VLM中的更复杂的任务。训练Generator学习VLM中的丰富的文本图像关联。从而在有限训练数据上取得了很好的效果。同时这个方法运用在SOTA上时提点明显。
 
 ### StyleRF: Zero-shot 3D Style Transfer of Neural Radiance Fields
 - from: cvpr2023
@@ -630,6 +632,7 @@ year={2023}
   year={2023}
 }
 ```
+方向是3D风格迁移。通过在辐射场特征空间中做风格迁移。使用了采样无关的内容转化保证了多视角的一致性。使用2D特征的推迟风格变化减少了内存消耗。实验显示取得了较好的结果。
 
 ### FAC: 3D Representation Learning via Foreground Aware Feature Contrast
 - from: cvpr2023
