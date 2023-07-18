@@ -637,44 +637,35 @@ year={2023}
 ### FAC: 3D Representation Learning via Foreground Aware Feature Contrast
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_FAC_3D_Representation_Learning_via_Foreground_Aware_Feature_Contrast_CVPR_2023_paper.pdf
-<br>
+<br>方向3D。对比学习在3D表征中有很大潜力。但目前对比学习是随机选取锚点进行比较，因为大部分场景中背景占多数，导致选取的锚点偏向于背景。这篇文章会区分出前景和背景。然后在前景之间和前景和背景之间进行对比，取得了较好的学习效果。实验显示在3D语义分割和目标检测上取得了较好的结果。
 
 ### Regularized Vector Quantization for Tokenized Image Synthesis
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Regularized_Vector_Quantization_for_Tokenized_Image_Synthesis_CVPR_2023_paper.pdf
-<br>
+<br>方向是图片量化。目前的方法有决策方法和随机方法，目前的决策方法有编码书坍塌和与推理阶段不对齐的问题，随机方法有编码书低使用率和困扰的重建目标的问题。这篇文章提出了基于监督的量化框架。使用了一个先验的分布监督，来测量预测分布和先验分布的差异，解决了编码书坍塌和编码书低使用率。使用了随机遮盖监督，平衡推理阶段不对齐和困扰的重建目标。提出了概率对比损失解决困扰的重建目标。实验显示取得了较好的结果。
 
 ### Backdoor Attacks Against Deep Image Compression via Adaptive Frequency Trigger
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Tan_Backdoor_Attacks_Against_Deep_Image_Compression_via_Adaptive_Frequency_Trigger_CVPR_2023_paper.pdf
-<br>
+<br>方向是模型攻击。提出了一个基于频率的触发注入模型，可以在DCT（Discrete Cosine Transfrom）域中加入触发。可以攻击图片压缩质量和任务模型的准确率。设计了一个简单的动态误差。实验显示取得了较好的结果。
 
 ### Towards Efficient Use of Multi-Scale Features in Transformer-Based Object Detectors
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Towards_Efficient_Use_of_Multi-Scale_Features_in_Transformer-Based_Object_Detectors_CVPR_2023_paper.pdf
-- code: https://github.com/ldkong1205/LaserMix
-- website: https://ldkong.com/LaserMix
-- citation:
-```
-@article{kong2022lasermix,
-    title={LaserMix for Semi-Supervised LiDAR Semantic Segmentation},
-    author={Kong, Lingdong and Ren, Jiawei and Pan, Liang and Liu, Ziwei},
-    journal={arXiv preprint arXiv:2207.00026},
-    year={2022}
-}
-```
+- code: https://github.com/ZhangGongjie/IMFA
+<br>方向是目标检测。提出了Iterative Multi-scale Feature Aggregation (IMFA)。改造了transformer的结构，使得编码特征可以根据预测结果循环更新。根据之前的检测结果，选取一小部分关键位置的多尺度特征进行使用。实验显示可以提点，而且计算量不大。
 
 ### DA-DETR: Domain Adaptive Detection Transformer with Information Fusion
 - from: cvpr2023
 - paper: https://arxiv.org/pdf/2103.17084.pdf
-<br>
+<br>方向是目标检测。detection transformer (DETR)在目标检测中得到了应用，但在领域适应目标检测中还没有使用。这篇文章提出了CNN-Transformer Blender (CTBlender)，把CNN的特征和Transformer的特征混合在一起，把高维语义信息和低维空间信息混合在一起。实验显示取得了较好的结果。
 
 ### UniDAformer: Unified Domain Adaptive Panoptic Segmentation Transformer via Hierarchical Mask Calibration
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_UniDAformer_Unified_Domain_Adaptive_Panoptic_Segmentation_Transformer_via_Hierarchical_Mask_CVPR_2023_paper.pdf
-<br>
+<br>方向是全景分割。是领域适应全景分割。已有方法是两支的网络，一支做实例分割，一支做语义分割，网络的参数比较多，训练和推理过程都比较慢。这篇文章提出了一个统一的网络。提出了Hierarchical Mask Calibration（HMC），在区域、超像素、像素这些尺度上，用来修正错误预测。支持统一的领域适应全景分割。有效的消除错误预测。支持端到端训练。实验显示取得了较好的结果。
 
 ### ABLE-NeRF: Attention-Based Rendering with Learnable Embeddings for Neural Radiance Field
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Kong_LaserMix_for_Semi-Supervised_LiDAR_Semantic_Segmentation_CVPR_2023_paper.pdf
-<br>
+<br>方向是3D。NeRF在处理光滑或者反射表面时会变得模糊。这篇文章提出了一个基于自注意力的框架。提出了Learnable Embeddings来捕捉不同视角下的效果。从而可以解决光滑或者反射表面的模糊问题。实验显示取得了较好的结果。
