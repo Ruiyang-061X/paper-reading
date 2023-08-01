@@ -669,3 +669,20 @@ year={2023}
 - from: cvpr2023
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Kong_LaserMix_for_Semi-Supervised_LiDAR_Semantic_Segmentation_CVPR_2023_paper.pdf
 <br>方向是3D。NeRF在处理光滑或者反射表面时会变得模糊。这篇文章提出了一个基于自注意力的框架。提出了Learnable Embeddings来捕捉不同视角下的效果。从而可以解决光滑或者反射表面的模糊问题。实验显示取得了较好的结果。
+
+
+## 8.1
+### From Images to Textual Prompts: Zero-shot Visual Question Answering with Frozen Large Language Models
+- from: cvpr2023
+- paper: https://arxiv.org/pdf/2212.10846.pdf
+- code: https://github.com/salesforce/LAVIS/tree/main/projects/img2llm-vqa
+- citation:
+```
+@misc{guo2023from,
+  title={From Images to Textual Prompts: Zero-shot {VQA} with Frozen Large Language Models},
+  author={Jiaxian Guo and Junnan Li and Dongxu Li and Anthony Tiong and Boyang Li and Dacheng Tao and Steven HOI},
+  year={2023},
+  url={https://openreview.net/forum?id=Ck1UtnVukP8}
+}
+```
+方向是VAQ。通过cv领域的一些现有模型，把图片的内容转化为question-answer pair，输入到大模型中，让大模型回答最初的问题。
