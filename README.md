@@ -670,7 +670,6 @@ year={2023}
 - paper: https://openaccess.thecvf.com/content/CVPR2023/papers/Kong_LaserMix_for_Semi-Supervised_LiDAR_Semantic_Segmentation_CVPR_2023_paper.pdf
 <br>方向是3D。NeRF在处理光滑或者反射表面时会变得模糊。这篇文章提出了一个基于自注意力的框架。提出了Learnable Embeddings来捕捉不同视角下的效果。从而可以解决光滑或者反射表面的模糊问题。实验显示取得了较好的结果。
 
-
 ## 8.1
 ### From Images to Textual Prompts: Zero-shot Visual Question Answering with Frozen Large Language Models
 - from: cvpr2023
@@ -718,3 +717,66 @@ year={2023}
 }
 ```
 方向是多模态大模型。用一个映射层把一个冻结视觉编码器和一个冻结大模型对齐起来。使用了一个对话式的数据集微调模型。训练数据只有5百万。在image question answering上取得了很好的结果。是对gpt4实现方案猜想。gpt4的多模态能力开放之后image question answering这个领域就不存在了。
+
+### Matcher: Segment Anything with One Shot Using All-Purpose Feature Matching
+- from: arxiv 2023.5
+- paper: https://arxiv.org/pdf/2305.13310.pdf
+- code: https://github.com/aim-uofa/Matcher
+- citation:
+```
+@article{liu2023matcher,
+  title={Matcher: Segment Anything with One Shot Using All-Purpose Feature Matching},
+  author={Liu, Yang and Zhu, Muzhi and Li, Hengtao and Chen, Hao and Wang, Xinlong and Shen, Chunhua},
+  journal={arXiv preprint arXiv:2305.13310},
+  year={2023}
+}
+```
+方向是目标分割。模型是一个全目标特征提取模型和一个类别无关的分割模型组合而成。直接组合这两个模型会产生问题。提出了双向匹配策略、鲁棒提示采样器、实例级匹配策略。实验显示结果比较好。
+
+### IdealGPT: Iteratively Decomposing Vision and Language Reasoning via Large Language Models
+- from: arxiv 2023.5
+- paper: https://arxiv.org/abs/2305.14985
+- code: https://github.com/Hxyou/IdealGPT
+- citation:
+```
+@misc{you2023idealgpt,
+      title={IdealGPT: Iteratively Decomposing Vision and Language Reasoning via Large Language Models}, 
+      author={Haoxuan You and Rui Sun and Zhecan Wang and Long Chen and Gengyu Wang and Hammad A. Ayyubi and Kai-Wei Chang and Shih-Fu Chang},
+      year={2023},
+      eprint={2305.14985},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+方向是VAQ。通过大模型和cv领域的一些现有模型，把图片的内容转化为question-answer pair，输入到大模型中，让大模型回答最初的问题。
+
+### Intelligent Grimm - Open-ended Visual Storytelling via Latent Diffusion Models
+- from: arxiv 2023.6
+- paper: https://arxiv.org/pdf/2306.00973.pdf
+- website: https://haoningwu3639.github.io/StoryGen_Webpage/
+- code: https://github.com/haoningwu3639/StoryGen
+- citation:
+```
+@article{liu2023intelligent,
+  title={Intelligent Grimm -- Open-ended Visual Storytelling via Latent Diffusion Models}, 
+  author={Chang Liu and Haoning Wu and Yujie Zhong and Xiaoyun Zhang and Weidi Xie},
+  year={2023},
+  journal={arXiv preprint arXiv:2306.00973},
+}
+```
+方向是图片生成。基于一个童话故事生成一个配图的序列。在stable diffusion上加了两个模块。还加了一个自动回归的图像生成器。使用一种数据收集手段，创建了一个新的数据集StorySalon。使用三阶段的训练策略，支持风格迁移、视觉背景条件、人类反馈对齐。实验显示效果比较好。
+
+### A Survey on Multimodal Large Language Models
+- from: arxiv 2023.6
+- paper: https://arxiv.org/pdf/2306.13549.pdf
+- code: https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models
+- citation:
+```
+@article{yin2023survey,
+  title={A Survey on Multimodal Large Language Models},
+  author={Yin, Shukang and Fu, Chaoyou and Zhao, Sirui and Li, Ke and Sun, Xing and Xu, Tong and Chen, Enhong},
+  journal={arXiv preprint arXiv:2306.13549},
+  year={2023}
+}
+```
+方向是多模态大模型。是调研。给出了多模态大模型的定义和相关概念。总结了关键技术和应用。分析了现存挑战和有希望的研究方向。
