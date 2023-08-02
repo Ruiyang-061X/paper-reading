@@ -780,3 +780,28 @@ year={2023}
 }
 ```
 方向是多模态大模型。是调研。给出了多模态大模型的定义和相关概念。总结了关键技术和应用。分析了现存挑战和有希望的研究方向。
+
+### Mindstorms in Natural Language-Based Societies of Mind
+- from: arxiv 2023.5
+- paper: https://arxiv.org/pdf/2305.17066.pdf
+方向是大模型。从社会学的角度理解大模型。大模型社会的社会结构应该是什么样的？君主专制和民主制度的优缺点是什么？整个社会的经济发展目标能不能用强化学习来实现？
+
+### Foundational Models Defining a New Era in Vision: A Survey and Outlook
+- from: arxiv 2023.7
+- paper: https://arxiv.org/pdf/2307.13721.pdf
+- code: https://github.com/awaisrauf/Awesome-CV-Foundational-Models
+- citation:
+```
+@article{awais2023foundational,
+  title={Foundational Models Defining a New Era in Vision: A Survey and Outlook},
+  author={Awais, Muhammad and Naseer, Muzammal and Khan, Salman and Anwer, Rao Muhammad and Cholakkal, Hisham and Shah, Mubarak and Yang, Ming-Hsuan and Khan, Fahad Shahbaz},
+  journal={arXiv preprint arXiv:2307.13721},
+  year={2023}
+}
+```
+方向是基础模型。是调研。
+
+### Chatting Makes Perfect - Chat-based Image Retrieval
+- from: arxiv 2023.5
+- paper: https://arxiv.org/pdf/2305.20062.pdf
+方向是图像检索。通过大模型，把图片的内容转化为question-answer pair。从而提升了图片检索的准确率。
