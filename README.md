@@ -686,3 +686,35 @@ year={2023}
 }
 ```
 方向是VAQ。通过cv领域的一些现有模型，把图片的内容转化为question-answer pair，输入到大模型中，让大模型回答最初的问题。
+
+## 8.2
+### HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face
+- from: arxiv 2023.3
+- paper: https://arxiv.org/pdf/2303.17580.pdf
+- code: https://github.com/microsoft/JARVIS
+- citation:
+```
+@article{shen2023hugginggpt,
+    title   = {HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace},
+    author  = {Shen, Yongliang and Song, Kaitao and Tan, Xu and Li, Dongsheng and Lu, Weiming and Zhuang, Yueting},
+    journal = {arXiv preprint arXiv:2303.17580},
+    year    = {2023}
+}
+```
+方向是通用人工智能。使用chatgpt控制huggingface中的模型完成任务。
+
+### MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models
+- from: arxiv 2023.4
+- paper: https://arxiv.org/pdf/2304.10592.pdf
+- website: https://minigpt-4.github.io/
+- code: https://github.com/Vision-CAIR/MiniGPT-4
+- citation:
+```
+@article{zhu2023minigpt,
+  title={MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models},
+  author={Zhu, Deyao and Chen, Jun and Shen, Xiaoqian and Li, Xiang and Elhoseiny, Mohamed},
+  journal={arXiv preprint arXiv:2304.10592},
+  year={2023}
+}
+```
+方向是多模态大模型。用一个映射层把一个冻结视觉编码器和一个冻结大模型对齐起来。使用了一个对话式的数据集微调模型。训练数据只有5百万。在image question answering上取得了很好的结果。是对gpt4实现方案猜想。gpt4的多模态能力开放之后image question answering这个领域就不存在了。
