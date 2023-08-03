@@ -851,3 +851,18 @@ year={2023}
 }
 ```
 方向是多模态大模型。支持text、image、audio三个模态。可以在图片中定位物体。提出了一个模块，基于SAM，可以提取出文本中的entities然后再图片中进行定位。两阶段的训练过程和一个数据集。实验显示取得了较好的结果。
+
+### 👍Generative Pretraining in Multimodality
+- from: arxiv 2023.7
+- paper: https://arxiv.org/pdf/2307.05222.pdf
+- code: https://github.com/baaivision/Emu
+- citation:
+```
+@article{Emu,
+  title={Generative Pretraining in Multimodality},
+  author={Sun, Quan and Yu, Qiying and Cui, Yufeng and Zhang, Fan and Zhang, Xiaosong and Wang, Yueze and Gao, Hongcheng and Liu, Jingjing and Huang, Tiejun and Wang, Xinlong},
+  publisher={arXiv preprint arXiv:2307.05222},
+  year={2023},
+}
+```
+方向是多模态大模型。支持text、image、video三个模态。EVA-CLIP+LLaMA+Stable Diffusion。
