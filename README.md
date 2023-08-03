@@ -829,3 +829,25 @@ year={2023}
 } 
 ```
 方向是多模态大模型。支持3D标题、3D密集标题、3D问题回答、3D任务分解、3D grounding、3D辅助对话、3D导航等任务。设计了3种提示机制，收集了一个数据集。使用渲染多视角图片提取3D特征。使用2D VLM作为backbone。提出了一种3D定位机制。可以更好的捕捉位置信息。实验显示取得了较好的结果。
+
+### ChatSpot: Bootstrapping Multimodal LLMs via Precise Referring Instruction Tuning
+- from: arxiv 2023.7
+- paper: https://arxiv.org/pdf/2307.09474.pdf
+- website: https://chatspot.streamlit.app/
+方向是多模态大模型。支持细粒度的交互，在图片上进行点和框。构建了一个数据集。提出了一些评价任务。实验显示取得了较好的结果。
+
+### 👍BuboGPT: Enabling Visual Grounding in Multi-Modal LLMs
+- from: arxiv 2023.7
+- paper: https://arxiv.org/pdf/2307.08581.pdf
+- code: https://github.com/magic-research/bubogpt
+- website: https://bubo-gpt.github.io/
+- citation:
+```
+@article{zhao2023bubogpt,
+  author      = {Yang Zhao and Zhijie Lin and Daquan Zhou and Zilong Huang and Jiashi Feng and Bingyi Kang},
+  title       = {BuboGPT: Enabling Visual Grounding in Multi-Modal LLMs},
+  publisher   = {arXiv:2307.08581},
+  year        = {2023}
+}
+```
+方向是多模态大模型。支持text、image、audio三个模态。可以在图片中定位物体。提出了一个模块，基于SAM，可以提取出文本中的entities然后再图片中进行定位。两阶段的训练过程和一个数据集。实验显示取得了较好的结果。
