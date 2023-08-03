@@ -805,3 +805,27 @@ year={2023}
 - from: arxiv 2023.5
 - paper: https://arxiv.org/pdf/2305.20062.pdf
 方向是图像检索。通过大模型，把图片的内容转化为question-answer pair。从而提升了图片检索的准确率。
+
+## 8.3
+### MovieChat: From Dense Token to Sparse Memory for Long Video Understanding
+- from: arxiv 2023.7
+- paper: https://arxiv.org/pdf/2307.16449.pdf
+- code: https://github.com/rese1f/MovieChat
+- website: https://rese1f.github.io/MovieChat/
+方向是视频理解。XMem+MiniGPT4。gpt3是text->text，gpt4是text+image->text，这些都没必要做了，换一下的还可以做的。image->text、video->text、text->image、text->video、image+image->text、video+image->text、text+video->text、text+image->image、text+image->video。
+
+### 👍3D-LLM: Injecting the 3D World into Large Language Models
+- from: arxiv 2023.7
+- paper: https://arxiv.org/pdf/2307.12981.pdf
+- code: https://github.com/UMass-Foundation-Model/3D-LLM
+- website: https://vis-www.cs.umass.edu/3dllm/
+- citation:
+```
+@article{3dllm,
+ author = {Hong, Yining and Zhen, Haoyu and Chen, Peihao and Zheng, Shuhong and Du, Yilun and Chen, Zhenfang and Gan, Chuang},
+ title = {3D-LLM: Injecting the 3D World into Large Language Models},
+ journal = {arXiv},
+ year = {2023},
+} 
+```
+方向是多模态大模型。支持3D标题、3D密集标题、3D问题回答、3D任务分解、3D grounding、3D辅助对话、3D导航等任务。设计了3种提示机制，收集了一个数据集。使用渲染多视角图片提取3D特征。使用2D VLM作为backbone。提出了一种3D定位机制。可以更好的捕捉位置信息。实验显示取得了较好的结果。
