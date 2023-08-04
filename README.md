@@ -866,3 +866,36 @@ year={2023}
 }
 ```
 方向是多模态大模型。支持text、image、video三个模态。EVA-CLIP+LLaMA+Stable Diffusion。
+
+### 👍GPT4RoI: Instruction Tuning Large Language Model on Region-of-Interest
+- from: arxiv 2023.7
+- paper: https://arxiv.org/pdf/2307.03601.pdf
+- code: https://github.com/jshilong/GPT4RoI
+- citation:
+```
+@misc{zhang2023gpt4roi,
+      title={GPT4RoI: Instruction Tuning Large Language Model on Region-of-Interest}, 
+      author={Shilong Zhang and Peize Sun and Shoufa Chen and Min Xiao and Wenqi Shao and Wenwei Zhang and Kai Chen and Ping Luo},
+      year={2023},
+      eprint={2307.03601},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+方向是多模态大模型。使用region-text的数据集微调了大模型。支持根据region回答问题。支持单region的问题和多region的推理。任何object detector都可以使用。
+
+### What Matters in Training a GPT4-Style Language Model with Multimodal Inputs?
+- from: arxiv 2023.7
+- paper: https://arxiv.org/pdf/2307.02469.pdf
+- code: https://github.com/bytedance/lynx-llm
+- website: https://lynx-llm.github.io/
+- citation:
+```
+@article{zeng2023matters,
+  title={What Matters in Training a GPT4-Style Language Model with Multimodal Inputs?},
+  author={Zeng, Yan and Zhang, Hanbo and Zheng, Jiani and Xia, Jiangnan and Wei, Guoqiang and Wei, Yang and Zhang, Yuchen and Kong, Tao},
+  journal={arXiv preprint arXiv:2307.02469},
+  year={2023}
+}
+```
+方向是多模态大模型。支持文档理解。构建了一个指令微调数据集。在只有文本、通用文本-视觉数据、文本指令微调数据集上进行训练。构建了一个文档理解评价数据集。实验显示取得了较好的结果。
