@@ -898,4 +898,51 @@ year={2023}
   year={2023}
 }
 ```
+方向是多模态大模型。做了一个全面的实验。实现了20多种结构。网络结构上，比较了不同的大模型backbone和模型设计。训练数据上，比较了不同的数据和采样策略。指令上，比较了不同的提示对于模型能力的影响。Benchmark上，提出了第一个全面的验证集，包含图片和视频。基于以上的实验，提出了一种最好的模型。
+
+### mPLUG-DocOwl : Modularized Multimodal Large Language Model for Document Understanding
+- from: arxiv 2023.7
+- paper: https://arxiv.org/pdf/2307.02499.pdf
+- code: https://github.com/X-PLUG/mPLUG-DocOwl
+- citation:
+```
+@misc{ye2023mplugdocowl,
+      title={mPLUG-DocOwl: Modularized Multimodal Large Language Model for Document Understanding}, 
+      author={Jiabo Ye and Anwen Hu and Haiyang Xu and Qinghao Ye and Ming Yan and Yuhao Dan and Chenlin Zhao and Guohai Xu and Chenliang Li and Junfeng Tian and Qian Qi and Ji Zhang and Fei Huang},
+      year={2023},
+      eprint={2307.02499},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 方向是多模态大模型。支持文档理解。构建了一个指令微调数据集。在只有文本、通用文本-视觉数据、文本指令微调数据集上进行训练。构建了一个文档理解评价数据集。实验显示取得了较好的结果。
+
+### 👍Visual Instruction Tuning with Polite Flamingo
+- from: arxiv 2023.7
+- paper: https://arxiv.org/pdf/2307.02499.pdf
+- code: https://github.com/ChenDelong1999/polite_flamingo
+- citation:
+```
+@article{chen2023visual,
+  title={Visual Instruction Tuning with Polite Flamingo},
+  author={Chen, Delong and Liu, Jianfeng and Dai, Wenliang and Wang, Baoyuan},
+  journal={arXiv preprint arXiv:2307.01003},
+  year={2023}
+}
+```
+方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
+
+### 👍Visual Instruction Tuning with Polite Flamingo
+- from: arxiv 2023.7
+- paper: https://arxiv.org/pdf/2307.02499.pdf
+- code: https://github.com/ChenDelong1999/polite_flamingo
+- citation:
+```
+@article{chen2023visual,
+  title={Visual Instruction Tuning with Polite Flamingo},
+  author={Chen, Delong and Liu, Jianfeng and Dai, Wenliang and Wang, Baoyuan},
+  journal={arXiv preprint arXiv:2307.01003},
+  year={2023}
+}
+```
+方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
