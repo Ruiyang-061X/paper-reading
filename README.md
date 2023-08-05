@@ -1011,106 +1011,142 @@ year={2023}
 ```
 方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
-### 👍Visual Instruction Tuning with Polite Flamingo
-- from: arxiv 2023.7
-- paper: https://arxiv.org/pdf/2307.02499.pdf
-- code: https://github.com/ChenDelong1999/polite_flamingo
+### Video-ChatGPT: Towards Detailed Video Understanding via Large Vision and Language Models
+- from: arxiv 2023.6
+- paper: https://arxiv.org/pdf/2306.05424.pdf
+- code: https://github.com/mbzuai-oryx/Video-ChatGPT
+- website: https://www.ival-mbzuai.com/video-chatgpt
 - citation:
 ```
-@article{chen2023visual,
-  title={Visual Instruction Tuning with Polite Flamingo},
-  author={Chen, Delong and Liu, Jianfeng and Dai, Wenliang and Wang, Baoyuan},
-  journal={arXiv preprint arXiv:2307.01003},
+@article{Maaz2023VideoChatGPT,
+    title={Video-ChatGPT: Towards Detailed Video Understanding via Large Vision and Language Models},
+    author={Muhammad Maaz, Hanoona Rasheed, Salman Khan and Fahad Khan},
+    journal={ArXiv 2306.05424},
+    year={2023}
+}
+```
+方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
+
+### MIMIC-IT: Multi-Modal In-Context Instruction Tuning
+- from: arxiv 2023.6
+- paper: https://arxiv.org/pdf/2306.05425.pdf
+- code: https://github.com/Luodian/Otter
+- website: https://otter.cliangyu.com/
+- citation:
+```
+@article{li2023mimicit,
+    title={MIMIC-IT: Multi-Modal In-Context Instruction Tuning},
+    author={Bo Li and Yuanhan Zhang and Liangyu Chen and Jinghao Wang and Fanyi Pu and Jingkang Yang and Chunyuan Li and Ziwei Liu},
+    year={2023},
+    eprint={2306.05425},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
+方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
+
+### M3IT: A Large-Scale Dataset towards Multi-Modal Multilingual Instruction Tuning
+- from: arxiv 2023.6
+- paper: https://arxiv.org/pdf/2306.04387.pdf
+- website: https://huggingface.co/datasets/MMInstruction/M3IT
+- citation:
+```
+@article{li2023m3it,
+  title={M$^3$IT: A Large-Scale Dataset towards Multi-Modal Multilingual Instruction Tuning},
+  author={Lei Li and Yuwei Yin and Shicheng Li and Liang Chen and Peiyi Wang and Shuhuai Ren and Mukai Li and Yazheng Yang and Jingjing Xu and Xu Sun and Lingpeng Kong and Qi Liu},
+  journal={arXiv preprint arXiv:2306.04387},
   year={2023}
 }
 ```
 方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
-### 👍Visual Instruction Tuning with Polite Flamingo
-- from: arxiv 2023.7
-- paper: https://arxiv.org/pdf/2307.02499.pdf
-- code: https://github.com/ChenDelong1999/polite_flamingo
+### Video-LLaMA An Instruction-tuned Audio-Visual Language Model for Video Understanding
+- from: arxiv 2023.6
+- paper: https://arxiv.org/pdf/2306.02858.pdf
+- code: https://github.com/DAMO-NLP-SG/Video-LLaMA
 - citation:
 ```
-@article{chen2023visual,
-  title={Visual Instruction Tuning with Polite Flamingo},
-  author={Chen, Delong and Liu, Jianfeng and Dai, Wenliang and Wang, Baoyuan},
-  journal={arXiv preprint arXiv:2307.01003},
+@article{damonlpsg2023videollama,
+  author = {Zhang, Hang and Li, Xin and Bing, Lidong},
+  title = {Video-LLaMA: An Instruction-tuned Audio-Visual Language Model for Video Understanding},
+  year = 2023,
+  journal = {arXiv preprint arXiv:2306.02858},
+  url = {https://arxiv.org/abs/2306.02858}
+}
+```
+方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
+
+### LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day
+- from: arxiv 2023.6
+- paper: https://arxiv.org/pdf/2306.00890.pdf
+- code: https://github.com/microsoft/LLaVA-Med
+方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
+
+### 👍GPT4Tools: Teaching Large Language Model to Use Tools via Self-instruction
+- from: arxiv 2023.6
+- paper: https://arxiv.org/pdf/2305.18752.pdf
+- code: https://github.com/StevenGrove/GPT4Tools
+- website: https://gpt4tools.github.io/
+- citation:
+```
+@misc{gpt4tools,
+  title = {GPT4Tools: Teaching LLM to Use Tools via Self-instruction},
+  author={Rui Yang, Lin Song, Yanwei Li, Sijie Zhao, Yixiao Ge, Xiu Li, Ying Shan},
+  journal={arXiv preprint arXiv:2305.18752},
   year={2023}
 }
 ```
 方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
-### 👍Visual Instruction Tuning with Polite Flamingo
-- from: arxiv 2023.7
-- paper: https://arxiv.org/pdf/2307.02499.pdf
-- code: https://github.com/ChenDelong1999/polite_flamingo
+### ImageBind-LLM: Multi-Modality Instruction Tuning
+- from: arxiv 2023.6
+- code: https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/imagebind_LLM
+- website: http://imagebind-llm.opengvlab.com/
+方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
+
+### PandaGPT: One Model To Instruction-Follow Them All
+- from: arxiv 2023.6
+- paper: https://arxiv.org/pdf/2305.16355.pdf
+- code: https://github.com/yxuansu/PandaGPT
+- website: https://panda-gpt.github.io/
 - citation:
 ```
-@article{chen2023visual,
-  title={Visual Instruction Tuning with Polite Flamingo},
-  author={Chen, Delong and Liu, Jianfeng and Dai, Wenliang and Wang, Baoyuan},
-  journal={arXiv preprint arXiv:2307.01003},
+@article{su2023pandagpt,
+  title={PandaGPT: One Model To Instruction-Follow Them All},
+  author={Su, Yixuan and Lan, Tian and Li, Huayang and Xu, Jialu and Wang, Yan and Cai, Deng},
+  journal={arXiv preprint arXiv:2305.16355},
   year={2023}
 }
 ```
 方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
-### 👍Visual Instruction Tuning with Polite Flamingo
-- from: arxiv 2023.7
-- paper: https://arxiv.org/pdf/2307.02499.pdf
-- code: https://github.com/ChenDelong1999/polite_flamingo
+### ChatBridge: Bridging Modalities with Large Language Model as a Language Catalyst
+- from: arxiv 2023.6
+- paper: https://arxiv.org/pdf/2305.16103.pdf
+- code: https://github.com/joez17/ChatBridge
+- website: https://iva-chatbridge.github.io/
 - citation:
 ```
-@article{chen2023visual,
-  title={Visual Instruction Tuning with Polite Flamingo},
-  author={Chen, Delong and Liu, Jianfeng and Dai, Wenliang and Wang, Baoyuan},
-  journal={arXiv preprint arXiv:2307.01003},
+@article{zhao2023chatbridge,
+  title={ChatBridge: Bridging Modalities with Large Language Model as a Language Catalyst},
+  author={Zhao, Zijia and Guo, Longteng and Yue, Tongtian and Chen, Sihan and Shao, Shuai and Zhu, Xinxin and Yuan, Zehuan and Liu, Jing},
+  journal={arXiv preprint arXiv:2305.16103},
   year={2023}
 }
 ```
 方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
-### 👍Visual Instruction Tuning with Polite Flamingo
-- from: arxiv 2023.7
-- paper: https://arxiv.org/pdf/2307.02499.pdf
-- code: https://github.com/ChenDelong1999/polite_flamingo
+### Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models
+- from: arxiv 2023.6
+- paper: https://arxiv.org/pdf/2305.15023.pdf
+- code: https://github.com/luogen1996/LaVIN
+- website: https://luogen1996.github.io/lavin/
 - citation:
 ```
-@article{chen2023visual,
-  title={Visual Instruction Tuning with Polite Flamingo},
-  author={Chen, Delong and Liu, Jianfeng and Dai, Wenliang and Wang, Baoyuan},
-  journal={arXiv preprint arXiv:2307.01003},
-  year={2023}
-}
-```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
-
-### 👍Visual Instruction Tuning with Polite Flamingo
-- from: arxiv 2023.7
-- paper: https://arxiv.org/pdf/2307.02499.pdf
-- code: https://github.com/ChenDelong1999/polite_flamingo
-- citation:
-```
-@article{chen2023visual,
-  title={Visual Instruction Tuning with Polite Flamingo},
-  author={Chen, Delong and Liu, Jianfeng and Dai, Wenliang and Wang, Baoyuan},
-  journal={arXiv preprint arXiv:2307.01003},
-  year={2023}
-}
-```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
-
-### 👍Visual Instruction Tuning with Polite Flamingo
-- from: arxiv 2023.7
-- paper: https://arxiv.org/pdf/2307.02499.pdf
-- code: https://github.com/ChenDelong1999/polite_flamingo
-- citation:
-```
-@article{chen2023visual,
-  title={Visual Instruction Tuning with Polite Flamingo},
-  author={Chen, Delong and Liu, Jianfeng and Dai, Wenliang and Wang, Baoyuan},
-  journal={arXiv preprint arXiv:2307.01003},
+@article{luo2023cheap,
+  title={Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models},
+  author={Luo, Gen and  Zhou, Yiyi and Ren, Tianhe and Chen, Shengxin abd Sun, Xiaoshuai and Ji, Rongrong},
+  journal={arXiv preprint arXiv:2305.15023},
   year={2023}
 }
 ```
