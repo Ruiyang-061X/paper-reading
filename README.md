@@ -1151,3 +1151,37 @@ year={2023}
 }
 ```
 方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
+
+### ULIP: Learning a Unified Representation of Language, Images, and Point Clouds for 3D Understanding
+- from: cvpr2023
+- paper: https://arxiv.org/pdf/2212.05171.pdf
+- code: https://github.com/salesforce/ULIP
+- website: https://tycho-xue.github.io/ULIP/
+- citation:
+```
+@article{xue2022ulip,
+  title={ULIP: Learning Unified Representation of Language, Image and Point Cloud for 3D Understanding},
+  author={Xue, Le and Gao, Mingfei and Xing, Chen and Mart{\'\i}n-Mart{\'\i}n, Roberto and Wu, Jiajun and Xiong, Caiming and Xu, Ran and Niebles, Juan Carlos and Savarese, Silvio},
+  journal={arXiv preprint arXiv:2212.05171},
+  year={2022}
+}
+```
+方向是3D理解。学习3D点云、图片、文本3种模态的统一表示，3D-Vision-Language Model。使用预训练过的VLM。用少量自动合成的object triplet（3D、image、text）学习和image-text空间对齐的3D空间。ULIP和具体的3D backbone结构无关，可以容易的结合到现有的3D backbone中。实验显示可以提升多个最近的3D backbone的准确性。在ModelNet40和ScanObjectNN这两个数据集进行了实验。
+
+### ULIP-2: Towards Scalable Multimodal Pre-training for 3D Understanding
+- from: arxiv 2023.5
+- paper: https://arxiv.org/pdf/2305.08275.pdf
+- code: https://github.com/salesforce/ULIP
+- website: https://tycho-xue.github.io/ULIP/
+- citation:
+```
+@misc{xue2023ulip2,
+  title={ULIP-2: Towards Scalable Multimodal Pre-training for 3D Understanding}, 
+  author={Le Xue and Ning Yu and Shu Zhang and Junnan Li and Roberto Martín-Martín and Jiajun Wu and Caiming Xiong and Ran Xu and Juan Carlos Niebles and Silvio Savarese},
+  year={2023},
+  eprint={2305.08275},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+```
+方向是3D理解。主要解决的是数据问题。对3D object进行多视角渲染生成image。使用gpt4-like model对image进行描述生成text。从而获取到了大量的数据。使用大量的数据训练ULIP。实验显示准确率得到了明显的提升。
