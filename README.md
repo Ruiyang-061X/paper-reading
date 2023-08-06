@@ -1185,3 +1185,21 @@ year={2023}
 }
 ```
 方向是3D理解。主要解决的是数据问题。对3D object进行多视角渲染生成image。使用gpt4-like model对image进行描述生成text。从而获取到了大量的数据。使用大量的数据训练ULIP。实验显示准确率得到了明显的提升。
+
+### Learning Transferable Visual Models From Natural Language Supervision
+- from: icml2021
+- paper: https://arxiv.org/pdf/2305.08275.pdf
+- code: https://github.com/openai/CLIP
+- website: https://tycho-xue.github.io/ULIP/
+- citation:
+```
+@misc{radford2021learning,
+      title={Learning Transferable Visual Models From Natural Language Supervision}, 
+      author={Alec Radford and Jong Wook Kim and Chris Hallacy and Aditya Ramesh and Gabriel Goh and Sandhini Agarwal and Girish Sastry and Amanda Askell and Pamela Mishkin and Jack Clark and Gretchen Krueger and Ilya Sutskever},
+      year={2021},
+      eprint={2103.00020},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+方向是VLM。使用image-text数据进行训练，得到Vision-Language Model。
