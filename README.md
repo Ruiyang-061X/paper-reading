@@ -1189,6 +1189,7 @@ year={2023}
 ```
 方向是VLM。使用image-text数据进行训练，得到Vision-Language Model。
 
+## 8.10
 ### LayoutLLM-T2I: Eliciting Layout Guidance from LLM for Text-to-Image Generation
 - from: arxiv 2023.8
 - paper: https://arxiv.org/pdf/2308.05095.pdf
@@ -1220,3 +1221,63 @@ year={2023}
 - paper: https://arxiv.org/pdf/2308.04622.pdf
 - website: https://cs.stanford.edu/~xtiange/projects/occnerf/
 方向是人体渲染。遮挡场景的人体渲染有两个问题，可见和遮挡区域的不匹配，没有使用先验信息。提出了基于表面的渲染方法，使用几何和可见性先验。
+
+### PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation
+- from: cvpr2017
+- paper: https://arxiv.org/pdf/1612.00593.pdf
+- code: https://github.com/charlesq34/pointnet
+- website: http://stanford.edu/~rqi/pointnet/
+- citation:
+```
+@article{qi2016pointnet,
+  title={PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation},
+  author={Qi, Charles R and Su, Hao and Mo, Kaichun and Guibas, Leonidas J},
+  journal={arXiv preprint arXiv:1612.00593},
+  year={2016}
+}
+```
+
+### PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space
+- from: nips2017
+- paper: https://arxiv.org/pdf/1706.02413.pdf
+- code: https://github.com/charlesq34/pointnet2
+- website: http://stanford.edu/~rqi/pointnet2/
+- citation:
+```
+@article{qi2017pointnetplusplus,
+  title={PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space},
+  author={Qi, Charles R and Yi, Li and Su, Hao and Guibas, Leonidas J},
+  journal={arXiv preprint arXiv:1706.02413},
+  year={2017}
+}
+```
+
+### Point-BERT: Pre-training 3D Point Cloud Transformers with Masked Point Modeling
+- from: cvpr2022
+- paper: https://arxiv.org/pdf/2111.14819.pdf
+- code: https://github.com/lulutang0608/Point-BERT
+- website: https://point-bert.ivg-research.xyz/
+- citation:
+```
+@inproceedings{yu2021pointbert,
+  title={Point-BERT: Pre-Training 3D Point Cloud Transformers with Masked Point Modeling},
+  author={Yu, Xumin and Tang, Lulu and Rao, Yongming and Huang, Tiejun and Zhou, Jie and Lu, Jiwen},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2022}
+}
+```
+
+### PointNeXt: Revisiting PointNet++ with Improved Training and Scaling Strategies
+- from: nips2022
+- paper: https://arxiv.org/pdf/2206.04670.pdf
+- code: https://github.com/guochengqian/PointNeXt
+- website: https://guochengqian.github.io/PointNeXt/
+- citation:
+```
+@InProceedings{qian2022pointnext,
+  title   = {PointNeXt: Revisiting PointNet++ with Improved Training and Scaling Strategies},
+  author  = {Qian, Guocheng and Li, Yuchen and Peng, Houwen and Mai, Jinjie and Hammoud, Hasan and Elhoseiny, Mohamed and Ghanem, Bernard},
+  booktitle=Advances in Neural Information Processing Systems (NeurIPS),
+  year    = {2022},
+}
+```
