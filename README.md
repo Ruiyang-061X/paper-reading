@@ -1208,12 +1208,15 @@ year={2023}
 ### Seeing in Flowing: Adapting CLIP for Action Recognition with Motion Prompts Learning
 - from: mm2023
 - paper: https://arxiv.org/pdf/2308.04828.pdf
+方向是动作识别。用clip做动作识别。两支动作建模模块。动态prompt学习模块生成动作相关的prompt。多模态交流模块。实验显示取得了较好的结果。
 
 ### TextPainter: Multimodal Text Image Generation with Visual-harmony and Text-comprehension for Poster Design
 - from: mm2023
 - paper: https://arxiv.org/pdf/2308.04733.pdf
+方向是文字图片生成。根据全局-局部背景图片指导风格，来生成视觉和谐的图片。使用语言模型和一个文本理解模块来形成句子和单词的风格变换。提出了PosterT80K数据集。实验显示取得了较好的结果。
 
 ### Rendering Humans from Object-Occluded Monocular Videos
 - from: iccv2023
 - paper: https://arxiv.org/pdf/2308.04622.pdf
 - website: https://cs.stanford.edu/~xtiange/projects/occnerf/
+方向是人体渲染。遮挡场景的人体渲染有两个问题，可见和遮挡区域的不匹配，没有使用先验信息。提出了基于表面的渲染方法，使用几何和可见性先验。
