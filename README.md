@@ -948,7 +948,6 @@ year={2023}
     primaryClass={cs.CV}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### Shikra: Unleashing Multimodal LLM’s Referential Dialogue Magic
 - from: arxiv 2023.6
@@ -963,7 +962,6 @@ year={2023}
   year={2023}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### Aligning Large Multi-Modal Model with Robust Instruction Tuning
 - from: arxiv 2023.6
@@ -979,7 +977,6 @@ year={2023}
   year={2023}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### MACAW-LLM: MULTI-MODAL LANGUAGE MODELING WITH IMAGE, AUDIO, VIDEO, AND TEXT INTEGRATION
 - from: arxiv 2023.6
@@ -994,7 +991,6 @@ year={2023}
   year={2023}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### LAMM: Language-Assisted Multi-Modal Instruction-Tuning Dataset, Framework, and Benchmark
 - from: arxiv 2023.6
@@ -1009,7 +1005,6 @@ year={2023}
         year={2023}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### Video-ChatGPT: Towards Detailed Video Understanding via Large Vision and Language Models
 - from: arxiv 2023.6
@@ -1025,7 +1020,6 @@ year={2023}
     year={2023}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### MIMIC-IT: Multi-Modal In-Context Instruction Tuning
 - from: arxiv 2023.6
@@ -1043,7 +1037,6 @@ year={2023}
     primaryClass={cs.CV}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### M3IT: A Large-Scale Dataset towards Multi-Modal Multilingual Instruction Tuning
 - from: arxiv 2023.6
@@ -1058,7 +1051,6 @@ year={2023}
   year={2023}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### Video-LLaMA An Instruction-tuned Audio-Visual Language Model for Video Understanding
 - from: arxiv 2023.6
@@ -1074,13 +1066,11 @@ year={2023}
   url = {https://arxiv.org/abs/2306.02858}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### LLaVA-Med: Training a Large Language-and-Vision Assistant for Biomedicine in One Day
 - from: arxiv 2023.6
 - paper: https://arxiv.org/pdf/2306.00890.pdf
 - code: https://github.com/microsoft/LLaVA-Med
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### 👍GPT4Tools: Teaching Large Language Model to Use Tools via Self-instruction
 - from: arxiv 2023.6
@@ -1096,13 +1086,11 @@ year={2023}
   year={2023}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### ImageBind-LLM: Multi-Modality Instruction Tuning
 - from: arxiv 2023.6
 - code: https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/imagebind_LLM
 - website: http://imagebind-llm.opengvlab.com/
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### PandaGPT: One Model To Instruction-Follow Them All
 - from: arxiv 2023.6
@@ -1118,7 +1106,6 @@ year={2023}
   year={2023}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### ChatBridge: Bridging Modalities with Large Language Model as a Language Catalyst
 - from: arxiv 2023.6
@@ -1134,7 +1121,6 @@ year={2023}
   year={2023}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models
 - from: arxiv 2023.6
@@ -1150,7 +1136,6 @@ year={2023}
   year={2023}
 }
 ```
-方向是多模态大模型。先训练一个polite flamingo，能把不礼貌的回答重写成礼貌的回答。使用polite flamingo把数据集中的不礼貌回答重写成礼貌回答。用这个礼貌的数据集训练出clever flamingo。实验显示效果比较好。
 
 ### ULIP: Learning a Unified Representation of Language, Images, and Point Clouds for 3D Understanding
 - from: cvpr2023
@@ -1203,3 +1188,32 @@ year={2023}
 }
 ```
 方向是VLM。使用image-text数据进行训练，得到Vision-Language Model。
+
+### LayoutLLM-T2I: Eliciting Layout Guidance from LLM for Text-to-Image Generation
+- from: arxiv 2023.8
+- paper: https://arxiv.org/pdf/2308.05095.pdf
+- code: https://github.com/LayoutLLM-T2I/LayoutLLM-T2I
+- website: https://layoutllm-t2i.github.io/
+- citation:
+```
+@article{qu2023layoutllm,
+  title={LayoutLLM-T2I: Eliciting Layout Guidance from LLM for Text-to-Image Generation},
+  author={Leigang Qu, Shengqiong Wu, Hao Fei, Liqiang Nie, Tat-Seng Chua},
+  journal={Proceedings of the {ACM} International Conference on Multimedia},
+  year={2023}
+}
+```
+方向是图片生成。根据text，使用llm生成粗粒度的layout。根据text和layout，生成最终的图片。
+
+### Seeing in Flowing: Adapting CLIP for Action Recognition with Motion Prompts Learning
+- from: mm2023
+- paper: https://arxiv.org/pdf/2308.04828.pdf
+
+### TextPainter: Multimodal Text Image Generation with Visual-harmony and Text-comprehension for Poster Design
+- from: mm2023
+- paper: https://arxiv.org/pdf/2308.04733.pdf
+
+### Rendering Humans from Object-Occluded Monocular Videos
+- from: iccv2023
+- paper: https://arxiv.org/pdf/2308.04622.pdf
+- website: https://cs.stanford.edu/~xtiange/projects/occnerf/
