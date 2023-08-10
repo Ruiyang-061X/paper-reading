@@ -1236,6 +1236,7 @@ year={2023}
   year={2016}
 }
 ```
+方向是3D。直接消费点云。支持分类、部分分割、语义分割。主要是mlp。实验显示取得了较好的结果。
 
 ### PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space
 - from: nips2017
@@ -1251,6 +1252,7 @@ year={2023}
   year={2017}
 }
 ```
+方向是3D。基于pointnet。对点云进行分组。融合不同尺度的特征。主要是sample&group、interpolate、skip link concatenation。实验显示取得了较好的结果。
 
 ### Point-BERT: Pre-training 3D Point Cloud Transformers with Masked Point Modeling
 - from: cvpr2022
