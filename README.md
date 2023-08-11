@@ -1268,6 +1268,7 @@ year={2023}
   year={2022}
 }
 ```
+方向是3D。借鉴bert的思路。把点云划分成局部点块，使用dvae(discrete variational auto encoder)把局部点块转化成discrete tokens。把部分局部点块mask掉，训练一个transformer，目标是恢复mask掉的discrete token，使用之前获得的discrete tokens进行监督。使用一个朴素的transformer就可以超过细心设计的点云模型。实验显示取得了较好的结果。
 
 ### PointNeXt: Revisiting PointNet++ with Improved Training and Scaling Strategies
 - from: nips2022
@@ -1283,3 +1284,4 @@ year={2023}
   year    = {2022},
 }
 ```
+方向是3D。提出了一系列训练策略。提出了Inverted Residual MLP，支持模型的scale up。实验显示取得了较好的结果。
